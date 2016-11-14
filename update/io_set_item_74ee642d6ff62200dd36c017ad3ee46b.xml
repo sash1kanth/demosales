@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="CloudFormation Stack - Active Directory uses existing VPC with private subnet">e8eee02d6ff62200dd36c017ad3ee4d8</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-30 21:59:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>74ee642d6ff62200dd36c017ad3ee46b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Terms and Conditions.CloudFormation Stack - Active Directory uses existing VPC with private subnet</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>io_set_item_74ee642d6ff62200dd36c017ad3ee46b</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-10-30 21:59:57</sys_updated_on>
+        <variable_set display_value="Terms and Conditions">5fb02c66374130006b882d465abe5d81</variable_set>
+    </io_set_item>
+</record_update>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>template_metadata_information</name>
+        <scoped_name>x_snc_skytap_demo_template_metadata_information</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 04:56:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8a19ada26ff66200dd36c017ad3ee483</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>template_metadata_information</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_ui_macro_8a19ada26ff66200dd36c017ad3ee483</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-03 05:18:34</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate var="jvar_template">
+       function eval_template() {
+          var template = "";
+          var className = current.getRecordClassName();
+          if (className == "x_snc_skytap_demo_available_templates") {
+             template = current;
+          }
+          return template;
+       }
+       eval_template();
+</g:evaluate>
+
+Template : $[jvar_template.name]
+	
+Metadata
+<table>
+	<tr>
+		<td>
+			Size: 
+		</td>
+		<td>
+		 $[jvar_template.size]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Networks: 
+		</td>
+		<td>
+		 $[jvar_template.network_count]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Region: 
+		</td>
+		<td>
+		 $[jvar_template.region]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Tags: 
+		</td>
+		<td>
+		 $[jvar_template.tag_list]
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Size: 
+		</td>
+		<td>
+		 $[current.size]
+		</td>
+	</tr>
+</table>	
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

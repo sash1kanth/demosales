@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable>IO:e11f329447132100f9529422dc9a712b</cat_variable>
+        <condition/>
+        <description>Validate CloudFormation Template Parameter</description>
+        <field/>
+        <global>true</global>
+        <messages/>
+        <name>RestoreModePassword read only for cloud </name>
+        <order/>
+        <script><![CDATA[// System generatend script, please do not change
+function onLoad() {
+ if (isCloudUser()) {
+  g_form.setReadOnly('RestoreModePassword', true);
+ }
+}
+function isCloudUser() {
+ if(g_user.hasRole('cloud_user')){
+  if(g_user.hasRole('cloud_operator') || g_user.hasRole('cloud_admin')){
+   return false;
+  }
+  return true;
+ }
+ return false;
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-30 21:59:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5dee642d6ff62200dd36c017ad3ee475</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RestoreModePassword read only for cloud </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>catalog_script_client_5dee642d6ff62200dd36c017ad3ee475</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-10-30 21:59:58</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <variable_set display_value="AD Template Parameters Set">2731183247032100f9529422dc9a7167</variable_set>
+        <view/>
+    </catalog_script_client>
+</record_update>

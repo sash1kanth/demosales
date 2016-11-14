@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="last_discovered_time" label="Last Discovered Time" language="en" table="x_snc_skytap_demo_available_templates">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>last_discovered_time</element>
+            <help/>
+            <hint/>
+            <label>Last Discovered Time</label>
+            <language>en</language>
+            <name>x_snc_skytap_demo_available_templates</name>
+            <plural>Last Discovered Times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-10-31 03:38:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>1f4cf9216f7a2200dd36c017ad3ee4f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Last Discovered Time</sys_name>
+            <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_skytap_demo_available_templates_last_discovered_time_en</sys_update_name>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-10-31 03:38:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

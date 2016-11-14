@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="SkyTap Integration Runs" max_length="40" name="x_snc_skytap_demo_integration_run" type="collection">
+        <element label="Credential Used" max_length="32" name="credential_used" reference="x_snc_skytap_demo_credentials" type="reference"/>
+        <element label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Error Message" max_length="4000" name="error_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Response" max_length="4000" name="response" type="string"/>
+        <element label="SkyTap Schedule" max_length="32" name="skytap_schedule" reference="x_snc_skytap_demo_import_schedules" type="reference"/>
+        <element label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element label="Ready" sequence="0" value="Ready"/>
+                <element label="In Progress" sequence="1" value="In Progress"/>
+                <element label="Completed" sequence="2" value="Completed"/>
+                <element label="Errored" sequence="3" value="Errored"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="credential_used"/>
+        </index>
+        <index name="index2">
+            <element name="skytap_schedule"/>
+        </index>
+    </element>
+</database>

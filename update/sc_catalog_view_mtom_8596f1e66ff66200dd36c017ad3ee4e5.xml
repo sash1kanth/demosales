@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Skytap Offerings">006635e66ff66200dd36c017ad3ee429</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 05:47:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8596f1e66ff66200dd36c017ad3ee4e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Skytap Offerings.catalog_skytap_offerings</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_skytap_offerings">b096f1e66ff66200dd36c017ad3ee4e5</sys_portal_page>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_8596f1e66ff66200dd36c017ad3ee4e5</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-03 05:47:05</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

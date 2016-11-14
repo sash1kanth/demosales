@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="">Default</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Skytap Offerings">006635e66ff66200dd36c017ad3ee429</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 05:47:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>eb9675e66ff66200dd36c017ad3ee43f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sales Demo Catalog Items</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sc_category_eb9675e66ff66200dd36c017ad3ee43f</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-03 05:47:27</sys_updated_on>
+        <title>Sales Demo Catalog Items</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=eb9675e66ff66200dd36c017ad3ee43f"/>
+</record_update>

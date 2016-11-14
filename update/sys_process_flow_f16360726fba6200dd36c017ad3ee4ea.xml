@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_skytap_demo_available_templates">state=Not Requested^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="Not Requested"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Not Requested</label>
+        <name>Not Requested</name>
+        <order>100</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 18:23:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f16360726fba6200dd36c017ad3ee4ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Not Requested</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_process_flow_f16360726fba6200dd36c017ad3ee4ea</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-03 18:23:50</sys_updated_on>
+        <table>x_snc_skytap_demo_available_templates</table>
+    </sys_process_flow>
+</record_update>

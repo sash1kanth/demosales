@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.swsdemoHelper</api_name>
+        <client_callable>false</client_callable>
+        <description>Main library for the Skytap - Demo Sales application.</description>
+        <name>swsdemoHelper</name>
+        <script><![CDATA[var swsdemoHelper = Class.create();
+swsdemoHelper.prototype = {
+	initialize: function() {
+		this.logSource = 'swsdemo';
+		this.verbosity = gs.getProperty('com.sws.int.demosalesverbosity', '3');
+	},
+
+	log: function(msg, level) {
+		if(!level) level=3;
+		if(level <= this.verbosity) gs.log(msg, this.logSource);
+	},
+	type: 'swsdemo'
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-29 19:59:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1fb98f8d4fbe2200bd6fb895f110c7e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>swsdemoHelper</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_1fb98f8d4fbe2200bd6fb895f110c7e8</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-10-29 19:59:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

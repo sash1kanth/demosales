@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Skytap SWS Cloud">e6b94f8d4fbe2200bd6fb895f110c77a</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="sys_data_source">nameSTARTSWITHswsdemo<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="swsdemo"/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image>images/icons/data_source.gif</image>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Data Sources</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_data_source</name>
+        <order>2230</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>swsdemoAdmin</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-29 19:59:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>beb94f8d4fbe2200bd6fb895f110c781</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Sources</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_app_module_beb94f8d4fbe2200bd6fb895f110c781</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-10-29 19:59:30</sys_updated_on>
+        <timeline_page/>
+        <title>Data Sources</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

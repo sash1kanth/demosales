@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Skytap Demo M2m Project Template" max_length="40" name="x_snc_skytap_demo_m2m_project_template" type="collection">
+        <element label="Skytap Project" max_length="32" name="project" reference="x_snc_skytap_demo_project" type="reference"/>
+        <element label="SkyTap Available Templates" max_length="32" name="template" reference="x_snc_skytap_demo_available_templates" type="reference"/>
+        <index name="index">
+            <element name="template"/>
+        </index>
+        <index name="index2">
+            <element name="project"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoIntegrationUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Sashi Maddali, Krishna Korada&#13;
+Description: &#13;
+Skytap Sales Demo Integration utility class. Performs all functions on an Integration run table. Mainly used for caching run traces for troubleshooting purpose. Data will be cleaned out per Table rotation. </description>
+        <name>SWSSalesDemoIntegrationUtils</name>
+        <script><![CDATA[var SWSSalesDemoIntegrationUtils = Class.create();
+SWSSalesDemoIntegrationUtils.prototype = {
+	/**
+ 	* Initilization of Script Class. Takes input during initilizing and assign to class variables
+ 	* @namespace Skytap
+ 	* @method initialize
+ 	* @param none
+ 	* @return {void}
+ 	*/
+	initialize: function() {
+		this.logSource = 'SWS-DemoSales';
+		this.verbosity = gs.getProperty('com.sws.int.demosalesverbosity', '3');
+	},
+	
+	/**
+ 	* Build Rest Object premitive. Builds a new Rest Message Object based on inputs provided.
+ 	* @namespace Skytap
+ 	* @method {String} restMessageName - Name of Rest message per Skytap Cloud Information
+ 	* @param {String} restMethodName - Name of Rest Method to be executed once Message template created
+ 	* @param {GlideRecord} credentialGr - Instance of Credentials to build a Rest Message
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	buildRestMessage: function(restMessageName, restMethodName, credentialGr) {
+		var restMessage = null;
+		restMessage = new sn_ws.RESTMessageV2(restMessageName, restMethodName);
+		restMessage.setBasicAuth(credentialGr.user_name, credentialGr.password.getDecryptedValue());
+		return restMessage;
+	},
+	
+	/**
+ 	* Logs every Integration run to a cached table. Runs are stored for debugging. Run table will be rotated
+ 	* @namespace Skytap
+ 	* @method {String} credentialSysId - Reference to Skytap Credentails Object
+ 	* @param {String} scheduleSysId - Schedule that triggers an Integration call
+ 	* @return {String} returns sys_id of newly inserted Integration run record
+ 	*/
+	insertIntegrationRun: function(credentialSysId, scheduleSysId) {
+		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
+		run.initialize();
+		run.start_time = new GlideDateTime();
+		if(!this.checkForNil(scheduleSysId)) {
+			run.skytap_schedule = scheduleSysId;
+		}
+		run.credential_used = credentialSysId;
+		run.status = 'In Progress';
+		run.insert();
+		return run.sys_id;
+	},
+	
+	/**
+ 	* Logs every Integration run to a cached table. Runs are stored for debugging. Run table will be rotated
+ 	* @namespace Skytap
+ 	* @method {String} insertIndividualIntegrationRun - Captures individual Integration run updates
+ 	* @param {String} credentialSysId - Instance of Skytap Credential record
+ 	* @return {String} returns newly created Run record
+ 	*/
+	insertIndividualIntegrationRun: function(credentialSysId) {
+		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
+		run.initialize();
+		run.start_time = new GlideDateTime();
+		run.credential_used = credentialSysId;
+		run.status = 'In Progress';
+		run.insert();
+		return run.sys_id;
+	},
+	
+	/**
+ 	* Updates Integration run record for Status and reponse
+ 	* @namespace Skytap
+ 	* @method {String} id - Name of Rest message per Skytap Cloud Information
+ 	* @param {String} response - Response Object
+ 	* @return {void} returns no value
+ 	*/
+	updateIntegrationRun: function(id, response) {
+		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
+		run.get(id);
+		run.end_time = new GlideDateTime();
+		run.response = response;
+		run.status = 'Completed';
+		run.update();
+	},
+	
+	/**
+ 	* Loads Default Skytap credential
+ 	* @namespace Skytap
+ 	* @method {getDefaultCredential} getDefaultCredential - Receieves default credentails
+ 	* @param {none} No Param
+ 	* @return {GlideRecord} returns credentails instance of Skytap
+ 	*/
+	getDefaultCredential : function() {
+		var credentialRec = new GlideRecord('x_snc_skytap_demo_credentials');
+		credentialRec.addQuery('name', gs.getProperty('x_snc_skytap_demo.skytap.default.credential'));
+		credentialRec.query();
+		if(credentialRec.next())
+			{
+			return credentialRec;
+		}
+		return '';
+	},
+	
+	/**
+ 	* Retrieve Rest messae object based on name
+ 	* @namespace Skytap
+ 	* @method {String} getRestMessageGr - retrieves a method by name
+ 	* @param {String} name - Name of System Rest Message
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	getRestMessageGr: function(name) {
+		var restMessage = new GlideRecord('sys_rest_message');
+		restMessage.addQuery('name', name);
+		restMessage.query();
+		if(restMessage.next())
+			{
+			return restMessage;
+		}
+		return '';
+	},
+	
+	/**
+ 	* Template Field mapping script
+ 	* @namespace Skytap
+ 	* @method {String} restMessageName - Name of Rest message per Skytap Cloud Information
+ 	* @param {String} setFieldsForGR - Creates an instance of mapping instance
+ 	* @param {String} body - Body of a Rest Message
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	setFieldsForGR: function(templateGr, body, mappingTable) {
+		var mapping = new GlideRecord('x_snc_skytap_demo_template_field_mapping');
+		mapping.addEncodedQuery('target_table=' + mappingTable);
+		mapping.query();
+		while(mapping.next())
+			{
+			templateGr[mapping.template_field.toString()] = body[mapping.skytap_field.toString()];
+		}
+		var jsonparse = new global.JSON();
+		templateGr.raw_xml = jsonparse.encode(body);
+	},
+	
+	/**
+ 	* Retrieved required information Rest Message.
+ 	* @namespace Skytap
+ 	* @method {String} name - Name of Rest message per Skytap Cloud Information
+ 	* @param {GlideRecord} credentialGr - Name of Rest Method to be executed once Message template created
+ 	* @param {String} parameters - Instance of Credentials to build a Rest Message
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	retriveInfoForRestMessage: function(name, fn, parameters, credentialGr) {
+		if(this.checkForNil(credentialGr))
+			{
+			credentialGr = this.getDefaultCredential();
+		}
+		var runid = this.insertIndividualIntegrationRun(credentialGr.sys_id);
+		var restmessageGr = this.getRestMessageGr(name);
+		var restMessageName = restmessageGr.sys_scope.scope + "." + restmessageGr.name;
+		var restMessage = this.buildRestMessage(restMessageName, fn, credentialGr);
+		for(var key in parameters)
+			{
+			restMessage.setStringParameterNoEscape(key, parameters[key]);
+		}
+		var response = restMessage.execute();
+		var responseBody = response.getBody();
+		this.updateIntegrationRun(runid, responseBody);
+		return response;
+	},
+	
+	/**
+ 	* Method that helps to convert datetime objects for Rest Messages
+ 	* @namespace Skytap
+ 	* @method {String} getDateTimeFormatForRest - Gets a dataformat based on input string
+ 	* @param {String} datetime - Datetime
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	getDateTimeFormatForRest: function(datetime) {
+		var gdt = new GlideDateTime(datetime);
+		var displayValue = gdt.getDisplayValueInternal();
+		var formatDate = gdt.getYearLocalTime() + '/' + gdt.getMonthLocalTime() + '/' + gdt.getDayOfMonthLocalTime();
+		var displayValueArr = displayValue.split(' ');
+		var timeArr = displayValueArr[1].split(':');
+		formatDate += ' ' + timeArr[0] + ':' + timeArr[1];
+			return formatDate;
+		
+	},
+	
+	/**
+ 	* Build Rest Object premitive. Builds a new Rest Message Object based on inputs provided.
+ 	* @namespace Skytap
+ 	* @method {String} checkForNil - Null check, copied logic from Global to a scoped. Custom script to test String input
+ 	* @param {String} item - Item
+ 	* @return {String} returns newly created Rest template
+ 	*/
+	checkForNil: function(item) {
+		return (item == null) || (typeof item == 'undefined') || ('' == '' + item);
+	},
+	
+	type: 'SWSSalesDemoIntegrationUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-29 20:31:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ff609b014ffe2200bd6fb895f110c7fa</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>SWSSalesDemoIntegrationUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_ff609b014ffe2200bd6fb895f110c7fa</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-11 07:35:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

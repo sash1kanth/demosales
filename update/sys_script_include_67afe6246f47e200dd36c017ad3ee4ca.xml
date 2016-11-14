@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoProjectIDUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Sashi Maddali&#13;
+Description: Sales Demo Project utils. All utility methods for Project related calls.&#13;
+</description>
+        <name>SWSSalesDemoProjectIDUtils</name>
+        <script><![CDATA[var SWSSalesDemoProjectIDUtils = Class.create();
+SWSSalesDemoProjectIDUtils.prototype = {
+	/**
+ 	* Initilization of Script Class. Takes input during initilizing and assign to class variables
+ 	* @namespace Skytap
+ 	* @method initialize
+ 	* @param {String} String - ID of a Project
+ 	* @return {void} none
+ 	*/
+	initialize: function(projectid) {
+		this.projectid = projectid;
+		this.integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
+		this.projectTable = 'x_snc_skytap_demo_project';
+		var commonParams = {};
+		commonParams['projectid'] = projectid;
+		this.commonParams = commonParams;
+	},
+	
+	/**
+ 	* Retrieves Project related information from a Rest Message
+ 	* @namespace Skytap
+ 	* @method process  - Get Project Info
+ 	* @return {String} returns sys_id
+ 	*/
+	process: function() {
+		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projectid.name'), 'get', this.commonParams);
+		var jsonparse = new global.JSON();
+		var jsonresponse = jsonparse.decode(response.getBody());
+		this._insertOrUpdate(jsonresponse);
+		
+	},
+	
+	/**
+ 	* Inserts or update on Project table
+ 	* @namespace Skytap
+ 	* @method _insertOrUpdate - Priate method. Used internally within Class
+ 	* @param {Object} JSONObject - Receives JSON response as a parameter
+ 	* @return {String} Str - returns sys_id
+ 	*/
+	_insertOrUpdate: function(jsonobject) {
+		var projectsysid = '';
+		var gr = new GlideRecord(this.projectTable);
+		gr.addQuery('id', this.projectid);
+		gr.query();
+		if(gr.next())
+			{
+			gr.last_discovered_time = new GlideDateTime();
+			this.integrationUtils.setFieldsForGR(gr, jsonobject, this.projectTable);
+			projectsysid = gr.update();
+		}
+		else
+			{
+			var grinsert = new GlideRecord(this.projectTable);
+			grinsert.initialize();
+			this.integrationUtils.setFieldsForGR(grinsert, jsonobject, this.projectTable);
+			grinsert.active = true;
+			grinsert.last_discovered_time = new GlideDateTime();
+			projectsysid = grinsert.insert();
+		}
+		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projecttemplate.name'), 'get', this.commonParams);
+		var templates = response.getBody();
+		this._createUpdateTemplateForProject(templates, projectsysid);
+	},
+	
+	/**
+ 	* Creates or Updates a Template for a Project
+ 	* @namespace Skytap
+ 	* @method _createUpdateTemplateForProject - Private method to be called within Class scope
+ 	* @param {Array} templateArr - template record instance as an object
+	* @param {String} projectsysid - sys_id of a Project
+ 	* @return {String} returns sys_id
+ 	*/
+	_createUpdateTemplateForProject : function(templates, projectsysid) {
+		var jsonparse = new global.JSON();
+		var jsonLabel = jsonparse.decode(templates);
+		for(var key in jsonLabel)
+			{
+			var utils = new SWSSalesDemoTemplateIDUtils(jsonLabel[key]['id']);
+			var templatesysid = utils.process();
+			this._createM2MProjectTemplate(projectsysid,templatesysid);
+		}
+		
+	},
+	
+	/**
+ 	* Creates many to many Project Templates
+ 	* @namespace Skytap
+ 	* @method _createM2MProjectTemplate
+ 	* @param {String} projectsysid - sys_id of Project
+ 	* @return {String} returns record sys_id
+ 	*/
+	_createM2MProjectTemplate: function(projectsysid, templatesysid) {
+		var gr = new GlideRecord('x_snc_skytap_demo_m2m_project_template');
+		gr.addQuery('project', projectsysid);
+		gr.addQuery('template', templatesysid);
+		gr.query();
+		if(!gr.next())
+			{
+			var grInsert = new GlideRecord('x_snc_skytap_demo_m2m_project_template');
+			grInsert.initialize();
+			grInsert.project = projectsysid;
+			grInsert.template = templatesysid;
+			grInsert.insert();
+		}
+	},
+	
+	type: 'SWSSalesDemoProjectIDUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-09 15:04:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>67afe6246f47e200dd36c017ad3ee4ca</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>SWSSalesDemoProjectIDUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_67afe6246f47e200dd36c017ad3ee4ca</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-11 06:25:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

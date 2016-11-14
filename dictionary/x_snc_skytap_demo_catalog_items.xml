@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sc_cat_item" label="SkyTap Catalog Items" max_length="40" name="x_snc_skytap_demo_catalog_items" type="collection">
+        <element label="Skytap Template" max_length="32" name="skytap_template" reference="x_snc_skytap_demo_available_templates" type="reference"/>
+        <index name="index">
+            <element name="skytap_template"/>
+        </index>
+    </element>
+</database>

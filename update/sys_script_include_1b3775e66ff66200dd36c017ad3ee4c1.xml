@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoCatalogItemCreator</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Krishna Korada&#13;
+Description:  Creates a Catalog Item from an Approved Template&#13;
+</description>
+        <name>SWSSalesDemoCatalogItemCreator</name>
+        <script><![CDATA[var SWSSalesDemoCatalogItemCreator = Class.create();
+SWSSalesDemoCatalogItemCreator.prototype = {
+	
+	/**
+ 	* Initilization of Script Class. Takes input during initilizing and assign to class variables
+ 	* @namespace Skytap
+ 	* @method initialize
+ 	* @param {TemplateID} String - ID of a Template
+ 	* @return {void} none
+ 	*/
+	initialize: function(templateid) {
+	},
+	
+	/**
+ 	* Creates a new Catalog Item from a template record
+ 	* @namespace Skytap
+ 	* @method createCatalogItem
+ 	* @param {GlideRecord} gr - template record instance as an object
+ 	* @return {catalog ref} returns newly created Catalog Item object reference
+ 	*/
+	createCatalogItem: function(templateGr) {
+		var catItemGr = new GlideRecord('x_snc_skytap_demo_catalog_items');
+		catItemGr.no_cart             = false;
+		catItemGr.no_proceed_checkout = true;
+		catItemGr.no_quantity         = true;
+		catItemGr.use_sc_layout       = false;
+		catItemGr.name = templateGr.name;
+		catItemGr.short_description = templateGr.name;
+		catItemGr.skytap_template = templateGr.sys_id;
+		catItemGr.description = templateGr.description;
+		catItemGr.category = this._getCategory();
+		catItemGr.sc_catalogs = this._getCatalog();
+		catItemGr.workflow = 'e53fe5b06f0be200dd36c017ad3ee4b5';
+		catItemGr.insert();
+		this._createDefaultPicture(catItemGr);
+		this._createDefaultIcon(catItemGr);
+		this._addVariableSets(catItemGr);
+		return catItemGr;
+	},
+	
+	/**
+ 	* Creates a set of Variables for each Catalog Item that publishes
+ 	* @namespace Skytap
+ 	* @method _addVariableSets - Private method referenced within Class
+ 	* @param {GlideRecord} object - newly Created Catalog item reference
+ 	* @return {bool} sys_id of Variable set
+ 	*/
+	_addVariableSets : function(catItemGr){
+		var variableSetsGr = new GlideRecord('item_option_new_set');
+		variableSetsGr.addEncodedQuery('nameIN' + gs.getProperty('x_snc_skytap_demo.skytap.catalog.variablesets'));
+		variableSetsGr.query();
+		while(variableSetsGr.next())
+			{
+			var setGr = new GlideRecord('io_set_item');
+			setGr.initialize();
+			setGr.variable_set = '' + variableSetsGr.sys_id;
+			setGr.sc_cat_item = catItemGr.sys_id;
+			setGr.insert();
+		}
+		
+	},
+	
+	/**
+ 	* Loads Skytap Category name from Properties which is used to publish Catalog Item
+ 	* @namespace Skytap
+ 	* @method _getCategory - Private method referenced within Class
+ 	* @param - No param
+ 	* @return Returns sys_id of existing Category or null
+ 	*/
+	_getCategory: function() {
+		var cat = new GlideRecord('sc_category');
+		cat.addQuery('title', gs.getProperty('x_snc_skytap_demo.skytap.catalog.category'));
+		cat.addActiveQuery();
+		cat.query();
+		if(cat.next())
+			{
+			return cat.sys_id;
+		}
+		return '';
+	},
+	
+	/**
+ 	* Loads Skytap published catalog item
+ 	* @namespace Skytap
+ 	* @method _getCatalog - Private method referenced within Class
+ 	* @param - No param
+ 	* @return Returns sys_id of Catalog item or null
+ 	*/
+	_getCatalog: function() {
+		var cat = new GlideRecord('sc_catalog');
+		cat.addQuery('title', gs.getProperty('x_snc_skytap_demo.skytap.catalog'));
+		cat.query();
+		if(cat.next())
+			{
+			return cat.sys_id;
+		}
+		return '';
+	},
+	
+	/**
+ 	* Adds a default picture to be assocaited with newly published catalog item
+ 	* @namespace Skytap
+ 	* @method _createDefaultPicture - Private method referenced within Class
+ 	* @param - {GlideRecord} object - Catalog Item Glide Record
+ 	* @return void
+ 	*/
+	_createDefaultPicture : function(catItemGr){
+		this._attachImage('picture', gs.getProperty('x_snc_skytap_demo.skytap.catalog.default.picture'), catItemGr);
+	},
+	
+	/**
+ 	* Adds a default picture to be assocaited with newly published catalog item
+ 	* @namespace Skytap
+ 	* @method _createDefaultIcon - Private method referenced within Class
+ 	* @param - {GlideRecord} object - Catalog Item Glide Record
+ 	* @return void
+ 	*/
+	_createDefaultIcon : function(catItemGr){
+		this._attachImage('icon', gs.getProperty('x_snc_skytap_demo.skytap.catalog.default.icon'), catItemGr);
+	},
+	
+	/**
+ 	* Attaches an Image to newly published Catalog Item
+ 	* @namespace Skytap
+ 	* @method _attachImage - Private method referenced within Class
+ 	* @param - {String} type - Image Type
+ 	* @param - {Object} dbImageSysId - System Image Record
+ 	* @param - {GlideRecord} catItemGr - Catalog Item Glide Record
+ 	* @return Returns sys_id of Catalog item or void
+ 	*/
+	_attachImage: function (type, dbImageSysId, catItemGr) {
+		var attachGr = new GlideRecord('sys_attachment');
+		attachGr.addQuery('table_name', 'ZZ_YYdb_image');
+		attachGr.addQuery('table_sys_id', dbImageSysId);
+		attachGr.addQuery('file_name', 'image');
+		attachGr.query();
+		if (attachGr.next()) {
+			var attachDocGr = new GlideRecord('sys_attachment_doc');
+			attachDocGr.addQuery('sys_attachment', attachGr.sys_id);
+			attachDocGr.query();
+			if (attachDocGr.hasNext()) {
+				attachGr.table_name = 'ZZ_YYx_snc_skytap_demo_catalog_items';
+				attachGr.file_name = type;
+				attachGr.table_sys_id = '' + catItemGr.sys_id;
+				attachGr.insert();
+				while (attachDocGr.next()) {
+					attachDocGr.sys_attachment = attachGr.sys_id;
+					attachDocGr.insert();
+				}
+			}
+		}
+	},
+	
+	type: 'SWSSalesDemoCatalogItemCreator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 05:49:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1b3775e66ff66200dd36c017ad3ee4c1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>SWSSalesDemoCatalogItemCreator</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_1b3775e66ff66200dd36c017ad3ee4c1</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-11 15:58:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="SkyTap Available Templates" max_length="40" name="x_snc_skytap_demo_available_templates" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="ID" max_length="40" name="id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Labels" max_length="4000" name="labels" type="string"/>
+        <element label="Last Discovered Time" max_length="40" name="last_discovered_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Networks" max_length="40" name="network_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Owner Name" max_length="100" name="owner_name" type="string"/>
+        <element label="Public" max_length="40" name="public" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Raw XML" max_length="4000" name="raw_xml" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Region" max_length="40" name="region" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Region Backend" max_length="40" name="region_backend" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Size" max_length="40" name="size" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Not Requested" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Not Requested" sequence="0" value="Not Requested"/>
+                <element label="Requested" sequence="1" value="Requested"/>
+                <element label="Approved" sequence="2" value="Approved"/>
+                <element label="Rejected" sequence="3" value="Rejected"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Tags" max_length="40" name="tag_list" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="URL" max_length="100" name="url" type="string"/>
+    </element>
+</database>

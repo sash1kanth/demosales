@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="rest_method" label="Rest Method" language="en" table="x_snc_skytap_demo_import_schedules">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>rest_method</element>
+            <help/>
+            <hint/>
+            <label>Rest Method</label>
+            <language>en</language>
+            <name>x_snc_skytap_demo_import_schedules</name>
+            <plural>Rest Methods</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-10-30 22:43:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>64e838ed6ff62200dd36c017ad3ee4e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Rest Method</sys_name>
+            <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_skytap_demo_import_schedules_rest_method_en</sys_update_name>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-10-30 22:43:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

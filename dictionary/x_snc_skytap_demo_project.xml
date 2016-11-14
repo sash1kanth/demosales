@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Skytap Project" max_length="40" name="x_snc_skytap_demo_project" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Id" max_length="40" name="id" type="string"/>
+        <element label="Last Discovered Time" max_length="40" name="last_discovered_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Owner Name" max_length="100" name="owner_name" type="string"/>
+        <element label="Raw XML" max_length="4000" name="raw_xml" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Summary" max_length="4000" name="summary" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Url" max_length="40" name="url" type="string"/>
+    </element>
+</database>

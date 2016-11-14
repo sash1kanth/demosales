@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Skytap - Demo Sales">3ab98f8d4fbe2200bd6fb895f110c7e6</category>
+        <order>1</order>
+        <property display_value="com.sws.int.demosalesverbosity" name="com.sws.int.demosalesverbosity">beb98f8d4fbe2200bd6fb895f110c7e6</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-10-29 19:59:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>97b98f8d4fbe2200bd6fb895f110c7e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>com.sws.int.demosalesverbosity.Skytap - Demo Sales</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_97b98f8d4fbe2200bd6fb895f110c7e8</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-10-29 19:59:32</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

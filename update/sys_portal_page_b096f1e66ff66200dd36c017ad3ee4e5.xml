@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2016-11-14 01:36:16">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_2_across">f6defafa0a0a0b12000d5016bd12ff06</layout>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_on>2016-11-03 05:47:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b096f1e66ff66200dd36c017ad3ee4e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_skytap_offerings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_portal_page_b096f1e66ff66200dd36c017ad3ee4e5</sys_update_name>
+        <sys_updated_by>ajay-adm</sys_updated_by>
+        <sys_updated_on>2016-11-03 05:47:05</sys_updated_on>
+        <title>catalog_skytap_offerings</title>
+        <user/>
+        <view>catalog_skytap_offerings</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="catalog_skytap_offerings">b096f1e66ff66200dd36c017ad3ee4e5</page>
+                <summary/>
+                <sys_created_by>ajay-adm</sys_created_by>
+                <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                <sys_id>980b8e6e6ff66200dd36c017ad3ee408</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>ajay-adm</sys_updated_by>
+                <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>100b8e6e6ff66200dd36c017ad3ee40a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>Sales Demo Catalog Items</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_title</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>140b8e6e6ff66200dd36c017ad3ee409</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>500b8e6e6ff66200dd36c017ad3ee409</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>com.glideapp.servicecatalog.RenderCategory</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>580b8e6e6ff66200dd36c017ad3ee40a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>b096f1e66ff66200dd36c017ad3ee4e5</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>5c0b8e6e6ff66200dd36c017ad3ee409</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;sysparm_parent=eb9675e66ff66200dd36c017ad3ee43f&amp;amp;sysparm_catalog=006635e66ff66200dd36c017ad3ee429&amp;amp;sysparm_catalog_view=catalog_skytap_offerings</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog_view</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>940b8e6e6ff66200dd36c017ad3ee40a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>catalog_skytap_offerings</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link_class</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>980b8e6e6ff66200dd36c017ad3ee409</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>category_title_link</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>macro</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>9c0b8e6e6ff66200dd36c017ad3ee408</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>sc_catalog_homepage_category_list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>d00b8e6e6ff66200dd36c017ad3ee40a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>d40b8e6e6ff66200dd36c017ad3ee409</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>006635e66ff66200dd36c017ad3ee429</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2016-11-03 00:16:20">980b8e6e6ff66200dd36c017ad3ee408</portal_section>
+                        <sys_created_by>ajay-adm</sys_created_by>
+                        <sys_created_on>2016-11-03 07:16:20</sys_created_on>
+                        <sys_id>d80b8e6e6ff66200dd36c017ad3ee408</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>ajay-adm</sys_updated_by>
+                        <sys_updated_on>2016-11-03 07:16:20</sys_updated_on>
+                        <value>eb9675e66ff66200dd36c017ad3ee43f</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

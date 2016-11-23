@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
-        <application display_value="Skytap SWS Cloud">e6b94f8d4fbe2200bd6fb895f110c77a</application>
+        <application display_value="Skytap Cloud">e6b94f8d4fbe2200bd6fb895f110c77a</application>
         <assessment/>
         <content_page/>
         <device_type/>

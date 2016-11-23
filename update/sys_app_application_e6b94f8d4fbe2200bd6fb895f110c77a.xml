@@ -16,17 +16,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6b94f8d4fbe2200bd6fb895f110c77a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Skytap SWS Cloud</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Skytap Cloud</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_app_application_e6b94f8d4fbe2200bd6fb895f110c77a</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-14 02:16:06</sys_updated_on>
-        <title>Skytap SWS Cloud</title>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 16:57:19</sys_updated_on>
+        <title>Skytap Cloud</title>
         <view_name/>
     </sys_app_application>
 </record_update>

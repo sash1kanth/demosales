@@ -6,6 +6,7 @@
         <element attributes="edge_encryption_enabled=true" display="true" label="ID" max_length="40" name="id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Labels" max_length="4000" name="labels" type="string"/>
         <element label="Last Discovered Time" max_length="40" name="last_discovered_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Mandatory Label Id" max_length="4000" name="mandatory_label_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Networks" max_length="40" name="network_count" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Owner Name" max_length="100" name="owner_name" type="string"/>

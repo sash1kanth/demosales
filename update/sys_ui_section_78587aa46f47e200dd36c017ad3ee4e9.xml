@@ -4,140 +4,126 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>id</element>
             <position>0</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>629ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>487a60494f1fa600bd6fb895f110c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>1</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>e29ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>d87a60494f1fa600bd6fb895f110c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>owner_name</element>
             <position>2</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>669ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>5c7a60494f1fa600bd6fb895f110c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>3</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>e69ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>dc7a60494f1fa600bd6fb895f110c7bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>last_discovered_time</element>
             <position>4</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>6a9ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>507a60494f1fa600bd6fb895f110c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>5</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>ea9ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>d07a60494f1fa600bd6fb895f110c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>6</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>6e9ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>547a60494f1fa600bd6fb895f110c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>url</element>
             <position>7</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>ee9ae9c26fcb2600dd36c017ad3ee44f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>d47a60494f1fa600bd6fb895f110c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>summary</element>
             <position>8</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>629ae9c26fcb2600dd36c017ad3ee450</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-23 04:54:57</sys_created_on>
+            <sys_id>587a60494f1fa600bd6fb895f110c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>raw_xml</element>
-            <position>9</position>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-11-14 01:53:29</sys_created_on>
-            <sys_id>e29ae9c26fcb2600dd36c017ad3ee450</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_project" sys_domain="global" view="Default view">78587aa46f47e200dd36c017ad3ee4e9</sys_ui_section>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-14 01:53:29</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-23 04:54:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

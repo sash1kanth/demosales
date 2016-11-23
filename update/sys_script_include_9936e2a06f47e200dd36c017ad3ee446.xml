@@ -23,16 +23,16 @@ SWSSalesDemoProjectUtils.prototype = {
 		var response = restMessage.execute();
 		var responseBody = response.getBody();
 		var httpStatus = response.getStatusCode();
-		this._processRestResponse(responseBody);
+		this._processRestResponse(responseBody, scheduleGr);
 		integrationUtils.updateIntegrationRun(runid, responseBody);
 	},
 	
-	_processRestResponse: function(response) {
+	_processRestResponse: function(response, schedule) {
 		var jsonparse = new global.JSON();
 		var jsonresponse = jsonparse.decode(response);
 		for(var key in jsonresponse)
 			{
-			var utils = new SWSSalesDemoProjectIDUtils(jsonresponse[key]['id']);
+			var utils = new SWSSalesDemoProjectIDUtils(jsonresponse[key]['id'], schedule.skytap_credential);
 			utils.process();
 		}
 	},
@@ -44,14 +44,14 @@ SWSSalesDemoProjectUtils.prototype = {
         <sys_created_on>2016-11-09 14:23:01</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>9936e2a06f47e200dd36c017ad3ee446</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>SWSSalesDemoProjectUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_9936e2a06f47e200dd36c017ad3ee446</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-09 15:06:59</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-23 05:18:49</sys_updated_on>
     </sys_script_include>
 </record_update>

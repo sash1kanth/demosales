@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[//Called when the 'OK' button gets clicked
+function continueOK(){
+	//Get the selected values from the right slushbucket
+	var values = slush.getValues(slush.getRightSelect());
+	//Get the sys_id of the current record
+	var taskID = g_form.getUniqueValue();
+	//Make sure we have at least one selection
+	
+	
+	var ajax = new GlideAjax('x_snc_skytap_demo.SWSSalesDemoAjaxUtils');
+	ajax.addParam('sysparm_name', 'labelsAdd');
+	ajax.addParam('sysparm_taskID', taskID);
+	ajax.addParam('sysparm_values', values);
+	ajax.getXML(addGroupResponse);
+}
+
+//Called when we get a response from the 'continueOK' function
+function addGroupResponse(){
+	GlideDialogWindow.get().destroy();
+	GlideList2.get('').setFilterAndRefresh('');
+	return false;
+}
+
+//Called when the 'Cancel' button gets clicked
+function continueCancel(){
+	//Close the dialog window
+	GlideDialogWindow.get().destroy();
+	return false;
+}
+
+//Called when the form loads
+addLoadEvent(function(){
+	slush.clear();
+	var id = g_form.getUniqueValue();
+	var ajax = new GlideAjax('x_snc_skytap_demo.SWSSalesDemoAjaxUtils');
+	ajax.addParam('sysparm_name', 'getLabelCategories');
+	ajax.addParam('sysparm_taskID', id);
+	ajax.getXML(loadResponse);
+	var ajax1 = new GlideAjax('x_snc_skytap_demo.SWSSalesDemoAjaxUtils');
+	ajax1.addParam('sysparm_name', 'getLabelCategoriesSelected');
+	ajax1.addParam('sysparm_taskID', id);
+	ajax1.getXML(loadResponse1);
+	return false;
+});
+
+function loadResponse(response){
+	//Process the return XML document and add groups to the left select
+	var xml = response.responseXML;
+	var e = xml.documentElement;
+	
+	var items = xml.getElementsByTagName("item");
+	if(items.length == 0)
+		return;
+	
+	//Loop through item elements and add each item to left slushbucket
+	for (var i = 0; i < items.length; i++) {
+		var item = items[i];
+		slush.addLeftChoice(item.getAttribute('value'), item.getAttribute('text'));
+	}
+}
+
+function loadResponse1(response){
+	//Process the return XML document and add groups to the left select
+	var xml = response.responseXML;
+	var e = xml.documentElement;
+	
+	var items = xml.getElementsByTagName("item");
+	if(items.length == 0)
+		return;
+	
+	//Loop through item elements and add each item to left slushbucket
+	for (var i = 0; i < items.length; i++) {
+		var item = items[i];
+		slush.addRightChoice(item.getAttribute('value'), item.getAttribute('text'));
+	}
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_skytap_demo_add_manadatory_template_labels.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+   <TABLE BORDER="0" width="800px">
+      <TR>
+         <TD>
+            Please select the Manadatory Label Categories you wish to add to this Template.
+         </TD>
+      </TR>
+      <TR>
+         <TD>
+            <!-- Include the 'ui_slushbucket' UI macro -->
+            <g:ui_slushbucket/>
+         </TD>
+      </TR>
+      <TR>
+         <TD align="right">
+            <!-- Include the 'dialog_buttons_ok_cancel' UI macro -->
+            <g:dialog_buttons_ok_cancel ok="return continueOK()" cancel="return continueCancel()" ok_type="button" cancel_type="button"/>
+         </TD>
+      </TR>
+   </TABLE>
+</j:jelly>
+]]></html>
+        <name>add_manadatory_template_labels</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-18 06:09:01</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bf3bcbdb6fcf6600dd36c017ad3ee46f</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>add_manadatory_template_labels</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_ui_page_bf3bcbdb6fcf6600dd36c017ad3ee46f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 20:25:31</sys_updated_on>
+    </sys_ui_page>
+</record_update>

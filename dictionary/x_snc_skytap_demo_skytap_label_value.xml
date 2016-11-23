@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Skytap Label Value" max_length="40" name="x_snc_skytap_demo_skytap_label_value" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Id" max_length="40" name="id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Label" max_length="100" name="label" type="string"/>
+        <element label="Label Category" max_length="32" name="label_category" reference="x_snc_skytap_demo_label_category" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Value" max_length="100" name="value" type="string"/>
+        <index name="index">
+            <element name="label_category"/>
+        </index>
+    </element>
+</database>

@@ -46,6 +46,7 @@ SWSSalesDemoCatalogItemCreator.prototype = {
 		this._createDefaultPicture(catItemGr);
 		this._createDefaultIcon(catItemGr);
 		this._addVariableSets(catItemGr);
+		this._addMandatoryVariables(templateGr, catItemGr);
 		return catItemGr;
 	},
 	
@@ -162,6 +163,40 @@ SWSSalesDemoCatalogItemCreator.prototype = {
 		}
 	},
 	
+	_addMandatoryVariables: function(templateGr, catItemGr) {
+		var labels = templateGr.mandatory_label_id.split(',');
+		for(var i = 0; i < labels.length; i++)
+			{
+			var labelGr = this._getLabelGr(labels[i]);
+			var question = labelGr.label_category.toString().split(' ');
+			var name = question[0].toLowerCase();
+			for(var j = 1; j < question.length; j++)
+				{
+				name += '_' + question[j].toLowerCase();
+			}
+			var option = new GlideRecord('item_option_new');
+			option.initialize();
+			option.cat_item = catItemGr.sys_id;
+			option.type = '6';
+			option.question_text = labelGr.label_category;
+			option.name = name;
+			option.mandatory = true;
+			option.order = 150 + (10*i);
+			var id = option.insert();
+			var gr = new GlideRecord('x_snc_skytap_demo_variable_label_mapping');
+			gr.initialize();
+			gr.variable = id;
+			gr.label_category = labelGr.sys_id;
+			gr.insert();
+		}
+	},
+	
+	_getLabelGr: function(id) {
+		var gr = new GlideRecord('x_snc_skytap_demo_label_category');
+		gr.get(id);
+		return gr;
+	},
+	
 	type: 'SWSSalesDemoCatalogItemCreator'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -169,14 +204,14 @@ SWSSalesDemoCatalogItemCreator.prototype = {
         <sys_created_on>2016-11-03 05:49:58</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1b3775e66ff66200dd36c017ad3ee4c1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>SWSSalesDemoCatalogItemCreator</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_1b3775e66ff66200dd36c017ad3ee4c1</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-11 15:58:29</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 08:13:19</sys_updated_on>
     </sys_script_include>
 </record_update>

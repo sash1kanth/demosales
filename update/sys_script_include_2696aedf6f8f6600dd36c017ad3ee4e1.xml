@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoLabelUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Sashi Maddali&#13;
+Description: List of methods mainly used to update Template related records&#13;
+</description>
+        <name>SWSSalesDemoLabelUtils</name>
+        <script><![CDATA[var SWSSalesDemoLabelUtils = Class.create();
+SWSSalesDemoLabelUtils.prototype = {
+	
+	initialize: function() {
+		
+	},
+	
+	createOrUpdateLabelCategory: function(id, name) {
+		var sysid = '';
+		var labelCat = new GlideRecord('x_snc_skytap_demo_label_category');
+		labelCat.addQuery('label_category_id',id);
+		labelCat.query();
+		if(!labelCat.next())
+			{
+			var labelCatInitialize = new GlideRecord('x_snc_skytap_demo_label_category');
+			labelCatInitialize.initialize();
+			labelCatInitialize.label_category = name;
+			labelCatInitialize.label_category_id = id;
+			sysid = labelCatInitialize.insert();
+		}
+		else
+			{
+			labelCat.label_category = name;
+			labelCat.label_category_id = id;
+			sysid = labelCat.update();
+		}
+		return sysid;
+	},
+	
+	createOrUpdateLabelValues: function(id, value, labelCategory) {
+		var sysid = '';
+		var labelValue = new GlideRecord('x_snc_skytap_demo_skytap_label_value');
+		labelValue.addQuery('id',id);
+		labelValue.query();
+		if(!labelValue.next())
+			{
+			var labelValInitialize = new GlideRecord('x_snc_skytap_demo_skytap_label_value');
+			labelValInitialize.initialize();
+			labelValInitialize.label_category = labelCategory;
+			labelValInitialize.id = id;
+			labelValInitialize.value = value;
+			sysid = labelValInitialize.insert();
+		}
+		else
+			{
+			labelValue.label_category = labelCategory;
+			labelValue.id = id;
+			labelValue.value = value;
+			sysid = labelValue.update();
+		}
+		return sysid;
+	},
+	
+	createLabelTemplateLink: function(label, template) {
+		var labelGr = new GlideRecord('x_snc_skytap_demo_template_labels');
+		labelGr.addQuery('label', label);
+		labelGr.addQuery('template', template);
+		labelGr.query();
+		if(!labelGr.next())
+			{
+			var labelGrInsert = new GlideRecord('x_snc_skytap_demo_template_labels');
+			labelGrInsert.initialize();
+			labelGrInsert.label = label;
+			labelGrInsert.template = template;
+			labelGrInsert.insert();
+		}
+	},
+	
+	type: 'SWSSalesDemoLabelUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-18 03:28:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2696aedf6f8f6600dd36c017ad3ee4e1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>SWSSalesDemoLabelUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_2696aedf6f8f6600dd36c017ad3ee4e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 04:03:58</sys_updated_on>
+    </sys_script_include>
+</record_update>

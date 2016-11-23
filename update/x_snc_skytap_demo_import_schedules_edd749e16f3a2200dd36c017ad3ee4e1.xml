@@ -6,7 +6,7 @@
         <conditional>false</conditional>
         <handler_method>retriveAllTemplates(current)</handler_method>
         <handler_script>new x_snc_skytap_demo.SWSSalesDemoTemplateUtils()</handler_script>
-        <name>SkyTap Templates</name>
+        <name>Sync SkyTap Templates</name>
         <rest_message display_value="SWS - Get Skytap Templates">56f943cd4fbe2200bd6fb895f110c755</rest_message>
         <rest_method display_value="get">f85a83cd4fbe2200bd6fb895f110c751</rest_method>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
@@ -24,15 +24,15 @@
         <sys_created_on>2016-10-30 23:51:46</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>edd749e16f3a2200dd36c017ad3ee4e1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>SkyTap Templates</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Sync SkyTap Templates</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>x_snc_skytap_demo_import_schedules_edd749e16f3a2200dd36c017ad3ee4e1</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-10-31 00:11:04</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 16:58:05</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </x_snc_skytap_demo_import_schedules>
 </record_update>

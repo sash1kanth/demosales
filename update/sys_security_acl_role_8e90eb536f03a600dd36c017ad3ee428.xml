@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-18 07:41:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8e90eb536f03a600dd36c017ad3ee428</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_skytap_demo_variable_label_mapping.x_snc_skytap_demo.user</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_security_acl display_value="x_snc_skytap_demo_variable_label_mapping">8290eb536f03a600dd36c017ad3ee428</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8e90eb536f03a600dd36c017ad3ee428</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-18 07:41:25</sys_updated_on>
+        <sys_user_role display_value="x_snc_skytap_demo.user" name="x_snc_skytap_demo.user">95b3ad584fb22200bd6fb895f110c751</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

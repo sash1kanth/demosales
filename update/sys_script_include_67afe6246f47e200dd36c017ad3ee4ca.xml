@@ -18,13 +18,18 @@ SWSSalesDemoProjectIDUtils.prototype = {
  	* @param {String} String - ID of a Project
  	* @return {void} none
  	*/
-	initialize: function(projectid) {
+	initialize: function(projectid, credentialGr) {
 		this.projectid = projectid;
 		this.integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
 		this.projectTable = 'x_snc_skytap_demo_project';
 		var commonParams = {};
 		commonParams['projectid'] = projectid;
 		this.commonParams = commonParams;
+		this.credentialGr = '';
+		if(this.integrationUtils.checkForNil())
+			{
+			this.credentialGr = credentialGr;
+		}
 	},
 	
 	/**
@@ -34,7 +39,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
  	* @return {String} returns sys_id
  	*/
 	process: function() {
-		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projectid.name'), 'get', this.commonParams);
+		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projectid.name'), 'get', this.commonParams, this.credentialGr);
 		var jsonparse = new global.JSON();
 		var jsonresponse = jsonparse.decode(response.getBody());
 		this._insertOrUpdate(jsonresponse);
@@ -68,7 +73,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
 			grinsert.last_discovered_time = new GlideDateTime();
 			projectsysid = grinsert.insert();
 		}
-		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projecttemplate.name'), 'get', this.commonParams);
+		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.projecttemplate.name'), 'get', this.commonParams, this.credentialGr);
 		var templates = response.getBody();
 		this._createUpdateTemplateForProject(templates, projectsysid);
 	},
@@ -78,7 +83,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
  	* @namespace Skytap
  	* @method _createUpdateTemplateForProject - Private method to be called within Class scope
  	* @param {Array} templateArr - template record instance as an object
-	* @param {String} projectsysid - sys_id of a Project
+ 	* @param {String} projectsysid - sys_id of a Project
  	* @return {String} returns sys_id
  	*/
 	_createUpdateTemplateForProject : function(templates, projectsysid) {
@@ -86,7 +91,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
 		var jsonLabel = jsonparse.decode(templates);
 		for(var key in jsonLabel)
 			{
-			var utils = new SWSSalesDemoTemplateIDUtils(jsonLabel[key]['id']);
+			var utils = new SWSSalesDemoTemplateIDUtils(jsonLabel[key]['id'], this.credentialGr);
 			var templatesysid = utils.process();
 			this._createM2MProjectTemplate(projectsysid,templatesysid);
 		}
@@ -122,14 +127,14 @@ SWSSalesDemoProjectIDUtils.prototype = {
         <sys_created_on>2016-11-09 15:04:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>67afe6246f47e200dd36c017ad3ee4ca</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>SWSSalesDemoProjectIDUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_67afe6246f47e200dd36c017ad3ee4ca</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-11 06:25:23</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-23 05:18:12</sys_updated_on>
     </sys_script_include>
 </record_update>

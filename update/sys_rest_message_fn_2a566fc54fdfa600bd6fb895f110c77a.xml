@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_rest_message_fn">
     <sys_rest_message_fn action="INSERT_OR_UPDATE">
-        <authentication_type/>
+        <authentication_type>basic</authentication_type>
         <basic_auth_password/>
-        <basic_auth_profile/>
+        <basic_auth_profile display_value="Skytap SWS Account">433a83cd4fbe2200bd6fb895f110c74f</basic_auth_profile>
         <basic_auth_user/>
-        <content/>
+        <content>[&#13;
+	{&#13;
+		"label_category": "Application",&#13;
+		"value": ""&#13;
+	}&#13;
+]</content>
         <function_name>put</function_name>
         <lock>false</lock>
         <oauth2_profile/>
         <protocol_name/>
-        <rest_endpoint>https://cloud.skytap.com/projects/79786</rest_endpoint>
-        <rest_message display_value="SWS - Get Skytap Project Info">b37e83014ffe2200bd6fb895f110c795</rest_message>
+        <rest_endpoint>https://cloud.skytap.com/v2/templates/${templateid}/labels.json</rest_endpoint>
+        <rest_message display_value="SWS - Get Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
-        <sys_created_on>2016-10-29 20:21:01</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-23 18:35:57</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>06ae87014ffe2200bd6fb895f110c727</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>2a566fc54fdfa600bd6fb895f110c77a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>put</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
-        <sys_update_name>sys_rest_message_fn_06ae87014ffe2200bd6fb895f110c727</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-10-29 20:21:01</sys_updated_on>
+        <sys_update_name>sys_rest_message_fn_2a566fc54fdfa600bd6fb895f110c77a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-23 18:40:40</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

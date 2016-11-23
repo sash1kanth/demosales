@@ -35,11 +35,11 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>skytap_sws_multi_lables</name>
-        <order>150</order>
+        <name>application</name>
+        <order>170</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <question_text>Skytap SWS Multi Lables</question_text>
+        <question_text>Application</question_text>
         <read_roles/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
@@ -53,19 +53,19 @@
         <show_help>false</show_help>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
-        <sys_created_on>2016-11-18 21:32:50</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-23 19:06:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>c9ee12276fc3a600dd36c017ad3ee4ea</sys_id>
+        <sys_id>d16da3894fdfa600bd6fb895f110c7ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Skytap SWS Multi Lables</sys_name>
+        <sys_name>Application</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
-        <sys_update_name>item_option_new_c9ee12276fc3a600dd36c017ad3ee4ea</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-18 21:32:50</sys_updated_on>
+        <sys_update_name>item_option_new_d16da3894fdfa600bd6fb895f110c7ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-23 19:06:43</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -81,5 +81,5 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c9ee12276fc3a600dd36c017ad3ee4ea"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d16da3894fdfa600bd6fb895f110c7ba"/>
 </record_update>

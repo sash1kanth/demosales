@@ -11,7 +11,7 @@
 
 SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getLabelCategories: function() {
-		var rec = new GlideRecord('x_snc_skytap_demo_available_templates');
+		/*var rec = new GlideRecord('x_snc_skytap_demo_available_templates');
 		rec.get(this.getParameter('sysparm_taskID'));
 		var ids = rec.mandatory_label_id;
 		var gr = new GlideRecord("x_snc_skytap_demo_label_category");
@@ -29,7 +29,16 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
 					item.setAttribute('text', gr.getValue('label_category'));
 				}
 			}
+		}*/
+		var gr = new GlideRecord("x_snc_skytap_demo_label_category");
+		gr.query();
+		while (gr.next()) {
+			var item = this.newItem();
+			item.setAttribute('value', gr.getValue('sys_id'));
+			item.setAttribute('text', gr.getValue('label_category'));
+			
 		}
+		
 	},
 	
 	getLabelCategoriesSelected: function() {
@@ -61,7 +70,7 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_on>2016-11-18 06:16:20</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a2ac431f6fcf6600dd36c017ad3ee498</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>SWSSalesDemoAjaxUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -69,6 +78,6 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_a2ac431f6fcf6600dd36c017ad3ee498</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 07:06:14</sys_updated_on>
+        <sys_updated_on>2016-11-23 18:43:56</sys_updated_on>
     </sys_script_include>
 </record_update>

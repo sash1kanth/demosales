@@ -59,6 +59,7 @@ SWSSalesDemoCatalogItemCreator.prototype = {
 			catItemGr.name = templateGr.name;
 			catItemGr.short_description = templateGr.name;
 			catItemGr.description = templateGr.description;
+			catItemGr.update();
 			this._addMandatoryVariables(templateGr, catItemGr);
 		}
 		
@@ -225,7 +226,7 @@ SWSSalesDemoCatalogItemCreator.prototype = {
         <sys_created_on>2016-11-03 05:49:58</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1b3775e66ff66200dd36c017ad3ee4c1</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>SWSSalesDemoCatalogItemCreator</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -233,6 +234,6 @@ SWSSalesDemoCatalogItemCreator.prototype = {
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_1b3775e66ff66200dd36c017ad3ee4c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-23 19:05:35</sys_updated_on>
+        <sys_updated_on>2016-11-24 06:23:34</sys_updated_on>
     </sys_script_include>
 </record_update>

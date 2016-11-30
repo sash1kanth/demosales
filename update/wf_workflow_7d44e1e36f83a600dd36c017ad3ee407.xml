@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["3ae5792b6f83a600dd36c017ad3ee4ea"]}</activity_stages>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["dded5dcf4fdb2a00bd6fb895f110c764"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -10,13 +10,13 @@
         <condition/>
         <condition_type/>
         <description/>
-        <expected_sequences>f2e5792b6f83a600dd36c017ad3ee4ea,fae5792b6f83a600dd36c017ad3ee4e9,fae5792b6f83a600dd36c017ad3ee4ea,3ae5792b6f83a600dd36c017ad3ee4ea</expected_sequences>
+        <expected_sequences>95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,19ed1dcf4fdb2a00bd6fb895f110c774,dded5dcf4fdb2a00bd6fb895f110c764|95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,91ed5dcf4fdb2a00bd6fb895f110c765,19ed1dcf4fdb2a00bd6fb895f110c775,15ed5dcf4fdb2a00bd6fb895f110c768|95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,91ed5dcf4fdb2a00bd6fb895f110c765,19ed1dcf4fdb2a00bd6fb895f110c775,15ed5dcf4fdb2a00bd6fb895f110c768,99ed5dcf4fdb2a00bd6fb895f110c765</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>f2e5792b6f83a600dd36c017ad3ee4ea,fae5792b6f83a600dd36c017ad3ee4e9,fae5792b6f83a600dd36c017ad3ee4ea,3ae5792b6f83a600dd36c017ad3ee4ea</full_sequences>
+        <full_sequences>95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,19ed1dcf4fdb2a00bd6fb895f110c774,dded5dcf4fdb2a00bd6fb895f110c764|95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,91ed5dcf4fdb2a00bd6fb895f110c765,19ed1dcf4fdb2a00bd6fb895f110c775,15ed5dcf4fdb2a00bd6fb895f110c768,19ed1dcf4fdb2a00bd6fb895f110c774,dded5dcf4fdb2a00bd6fb895f110c764|95ed5dcf4fdb2a00bd6fb895f110c76a,11ed1dcf4fdb2a00bd6fb895f110c775,91ed5dcf4fdb2a00bd6fb895f110c766,91ed5dcf4fdb2a00bd6fb895f110c765,19ed1dcf4fdb2a00bd6fb895f110c775,15ed5dcf4fdb2a00bd6fb895f110c768,99ed5dcf4fdb2a00bd6fb895f110c765,dded5dcf4fdb2a00bd6fb895f110c764</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
-        <name>Changes to Environment</name>
+        <name>Skytap Workflow - Changes to Environment</name>
         <not_cacheable>false</not_cacheable>
         <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
         <order>100</order>
@@ -26,24 +26,24 @@
         <requires_ert>true</requires_ert>
         <run_multiple>false</run_multiple>
         <schedule/>
-        <stage_field/>
+        <stage_field>stage</stage_field>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">f2e5792b6f83a600dd36c017ad3ee4ea</start>
+        <start display_value="Begin">95ed5dcf4fdb2a00bd6fb895f110c76a</start>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>b2e5792b6f83a600dd36c017ad3ee4e9</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d1ed1dcf4fdb2a00bd6fb895f110c773</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:36:30</sys_updated_on>
-        <table>global</table>
+        <sys_updated_on>2016-11-29 13:48:13</sys_updated_on>
+        <table>sc_req_item</table>
         <timezone/>
         <validated>true</validated>
-        <workflow display_value="Changes to Environment">7d44e1e36f83a600dd36c017ad3ee407</workflow>
+        <workflow display_value="Skytap Workflow - Changes to Environment">7d44e1e36f83a600dd36c017ad3ee407</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
         <access>public</access>
         <description/>
-        <name>Changes to Environment</name>
+        <name>Skytap Workflow - Changes to Environment</name>
         <preview/>
         <sys_class_name>wf_workflow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -52,8 +52,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d44e1e36f83a600dd36c017ad3ee407</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Changes to Environment</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Skytap Workflow - Changes to Environment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
@@ -61,11 +61,89 @@
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>wf_workflow_7d44e1e36f83a600dd36c017ad3ee407</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 17:16:44</sys_updated_on>
-        <table>global</table>
+        <sys_updated_on>2016-11-29 13:11:03</sys_updated_on>
+        <table>sc_req_item</table>
         <template>false</template>
         <vars/>
     </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d1ed1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>5ded1dcf4fdb2a00bd6fb895f110c773</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>55ed1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d9ed1dcf4fdb2a00bd6fb895f110c773</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>51ed1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>dded1dcf4fdb2a00bd6fb895f110c773</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+    </wf_stage>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -82,20 +160,20 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>f2e5792b6f83a600dd36c017ad3ee4ea</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>95ed5dcf4fdb2a00bd6fb895f110c76a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Changes to Environment">b2e5792b6f83a600dd36c017ad3ee4e9</workflow_version>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">f2e5792b6f83a600dd36c017ad3ee4ea</activity>
+        <activity display_value="Begin">95ed5dcf4fdb2a00bd6fb895f110c76a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -109,20 +187,20 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>76e5792b6f83a600dd36c017ad3ee4ea</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>19ed5dcf4fdb2a00bd6fb895f110c76a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Skytap Rest">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>4</databus_lookup_id>
+        <databus_lookup_id>9</databus_lookup_id>
         <height/>
         <input>{}</input>
         <is_parent>false</is_parent>
-        <name>Change Environment</name>
+        <name>Change Environment Attributes</name>
         <new_activity_definition/>
         <notes/>
         <out_of_date>false</out_of_date>
@@ -131,192 +209,185 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>fae5792b6f83a600dd36c017ad3ee4ea</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>91ed5dcf4fdb2a00bd6fb895f110c766</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Changes to Environment">b2e5792b6f83a600dd36c017ad3ee4e9</workflow_version>
-        <x>413</x>
-        <y>125</y>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>241</x>
+        <y>263</y>
     </wf_activity>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>32e53d2b6f83a600dd36c017ad3ee45a</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>11ed5dcf4fdb2a00bd6fb895f110c767</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <value>af9121a36f83a600dd36c017ad3ee4c2</value>
-        <variable display_value="">a8f297096f4fe200dd36c017ad3ee4d9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>f2e5792b6f83a600dd36c017ad3ee4eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <value/>
-        <variable display_value="">de0413496f4fe200dd36c017ad3ee451</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>b6e5792b6f83a600dd36c017ad3ee4eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <value/>
-        <variable display_value="">a4bece956f032600dd36c017ad3ee407</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>b6e53d2b6f83a600dd36c017ad3ee45a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <value>0</value>
-        <variable display_value="">995e0e956f032600dd36c017ad3ee469</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>7ee5792b6f83a600dd36c017ad3ee4ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
-        <value>${workflow.scratchpad.params}</value>
-        <variable display_value="">69a35f096f4fe200dd36c017ad3ee44b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>7ae5792b6f83a600dd36c017ad3ee4eb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
         <value>0</value>
         <variable display_value="">58d35f096f4fe200dd36c017ad3ee450</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>7ae53d2b6f83a600dd36c017ad3ee45a</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>15ed5dcf4fdb2a00bd6fb895f110c766</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>${workflow.scratchpad.params}</value>
+        <variable display_value="">69a35f096f4fe200dd36c017ad3ee44b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>1ded5dcf4fdb2a00bd6fb895f110c767</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
         <value/>
         <variable display_value="">c083db096f4fe200dd36c017ad3ee449</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>3ee5792b6f83a600dd36c017ad3ee4eb</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>95ed5dcf4fdb2a00bd6fb895f110c767</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <value/>
-        <variable display_value="">9f8e8e956f032600dd36c017ad3ee410</variable>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>af9121a36f83a600dd36c017ad3ee4c2</value>
+        <variable display_value="">a8f297096f4fe200dd36c017ad3ee4d9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>32e5792b6f83a600dd36c017ad3ee4eb</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>99ed5dcf4fdb2a00bd6fb895f110c766</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <value/>
-        <variable display_value="">922413496f4fe200dd36c017ad3ee4b7</variable>
+        <variable display_value="">de0413496f4fe200dd36c017ad3ee451</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>fee5792b6f83a600dd36c017ad3ee4eb</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d1ed5dcf4fdb2a00bd6fb895f110c767</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
         <value>8dc16d636f83a600dd36c017ad3ee4f0</value>
         <variable display_value="">44439b096f4fe200dd36c017ad3ee417</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4ea</document_key>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d5ed5dcf4fdb2a00bd6fb895f110c766</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">922413496f4fe200dd36c017ad3ee4b7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
         <order>1000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>f2e53d2b6f83a600dd36c017ad3ee45a</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>59ed5dcf4fdb2a00bd6fb895f110c767</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
         <value/>
         <variable display_value="">3a55b9116f032600dd36c017ad3ee4b8</variable>
     </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c766</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>5ded5dcf4fdb2a00bd6fb895f110c766</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>workflow.scratchpad.errorMessage = activity.output;</value>
+        <variable display_value="">7ee09d8b4fdb2a00bd6fb895f110c73a</variable>
+    </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Change Environment">fae5792b6f83a600dd36c017ad3ee4ea</activity>
-        <condition>true</condition>
-        <condition_default/>
+        <activity display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</activity>
+        <condition>activity.result != 'success'</condition>
+        <condition_default display_value="Failure">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
         <error>false</error>
         <event>false</event>
         <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>0</order>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>3ee53d2b6f83a600dd36c017ad3ee45a</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c767</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</activity>
+        <condition>activity.result == 'success'</condition>
+        <condition_default display_value="Success">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>51ed5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -334,18 +405,406 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>3ae5792b6f83a600dd36c017ad3ee4ea</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c764</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Changes to Environment">b2e5792b6f83a600dd36c017ad3ee4e9</workflow_version>
-        <x>523</x>
-        <y>262</y>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>826</x>
+        <y>465</y>
     </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Skytap Rest">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Get Environment Status</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>15ed5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>899</x>
+        <y>125</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>19ed5dcf4fdb2a00bd6fb895f110c769</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>af9121a36f83a600dd36c017ad3ee4c2</value>
+        <variable display_value="">a8f297096f4fe200dd36c017ad3ee4d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>1ded5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value/>
+        <variable display_value="">de0413496f4fe200dd36c017ad3ee451</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>55ed5dcf4fdb2a00bd6fb895f110c769</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>a8f790624fd32a00bd6fb895f110c754</value>
+        <variable display_value="">44439b096f4fe200dd36c017ad3ee417</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>59ed5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value/>
+        <variable display_value="">922413496f4fe200dd36c017ad3ee4b7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>91ed5dcf4fdb2a00bd6fb895f110c769</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">58d35f096f4fe200dd36c017ad3ee450</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>95ed5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>${workflow.scratchpad.params}</value>
+        <variable display_value="">69a35f096f4fe200dd36c017ad3ee44b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>9ded5dcf4fdb2a00bd6fb895f110c769</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value/>
+        <variable display_value="">c083db096f4fe200dd36c017ad3ee449</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d9ed5dcf4fdb2a00bd6fb895f110c769</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:46</sys_updated_on>
+        <value>var response = activity.output;&#13;
+var jsonparse = new global.JSON();&#13;
+var jsonLabel = jsonparse.decode(response);&#13;
+workflow.scratchpad.status = jsonLabel['runstate'];</value>
+        <variable display_value="">3a55b9116f032600dd36c017ad3ee4b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15ed5dcf4fdb2a00bd6fb895f110c768</document_key>
+        <order>1000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c768</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <value>workflow.scratchpad.errorMessage = activity.output;</value>
+        <variable display_value="">7ee09d8b4fdb2a00bd6fb895f110c73a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</activity>
+        <condition>activity.result != 'success'</condition>
+        <condition_default display_value="Failure">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d1ed5dcf4fdb2a00bd6fb895f110c76a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</activity>
+        <condition>activity.result == 'success'</condition>
+        <condition_default display_value="Success">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>51ed5dcf4fdb2a00bd6fb895f110c76a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Environment Status</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>99ed5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>1115</x>
+        <y>295</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99ed5dcf4fdb2a00bd6fb895f110c765</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>1ded5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>current.x_snc_skytap_demo_environment_state = workflow.scratchpad.status;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Environment Status">99ed5dcf4fdb2a00bd6fb895f110c765</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Environment Status to Busy</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>91ed5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>494</x>
+        <y>132</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91ed5dcf4fdb2a00bd6fb895f110c765</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>15ed5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>x_snc_skytap_demo_environment_state=busy^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Environment Status to Busy">91ed5dcf4fdb2a00bd6fb895f110c765</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d5ed5dcf4fdb2a00bd6fb895f110c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Error Message</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>19ed1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>482</x>
+        <y>429</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c774</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>99ed1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>current.work_notes = 'Unable to Change Environment Attributes because of ' + workflow.scratchpad.errorMessage;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Error Message">19ed1dcf4fdb2a00bd6fb895f110c774</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>5ded1dcf4fdb2a00bd6fb895f110c774</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+    </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -362,34 +821,34 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>fae5792b6f83a600dd36c017ad3ee4e9</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>11ed1dcf4fdb2a00bd6fb895f110c775</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Changes to Environment">b2e5792b6f83a600dd36c017ad3ee4e9</workflow_version>
-        <x>162</x>
-        <y>46</y>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>206</x>
+        <y>86</y>
     </wf_activity>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>fae5792b6f83a600dd36c017ad3ee4e9</document_key>
+        <document_key>11ed1dcf4fdb2a00bd6fb895f110c775</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>7ee5792b6f83a600dd36c017ad3ee4e9</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>91ed1dcf4fdb2a00bd6fb895f110c775</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <value>workflow.scratchpad.params = workflow.inputs.u_params;</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Paramters">fae5792b6f83a600dd36c017ad3ee4e9</activity>
+        <activity display_value="Set Paramters">11ed1dcf4fdb2a00bd6fb895f110c775</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -403,44 +862,381 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>32e5792b6f83a600dd36c017ad3ee4ea</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>55ed1dcf4fdb2a00bd6fb895f110c775</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Timer</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>19ed1dcf4fdb2a00bd6fb895f110c775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
+        <x>631</x>
+        <y>29</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>51ed1dcf4fdb2a00bd6fb895f110c778</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>99ed1dcf4fdb2a00bd6fb895f110c775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d1ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>5ded1dcf4fdb2a00bd6fb895f110c775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>dded1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>59ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>1970-01-01 00:00:02</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>1ded1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>19ed1dcf4fdb2a00bd6fb895f110c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>d9ed1dcf4fdb2a00bd6fb895f110c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>15ed1dcf4fdb2a00bd6fb895f110c778</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>11ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>55ed1dcf4fdb2a00bd6fb895f110c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>91ed1dcf4fdb2a00bd6fb895f110c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>9ded1dcf4fdb2a00bd6fb895f110c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19ed1dcf4fdb2a00bd6fb895f110c775</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>95ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Timer">19ed1dcf4fdb2a00bd6fb895f110c775</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>1ded5dcf4fdb2a00bd6fb895f110c764</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">76e5792b6f83a600dd36c017ad3ee4ea</condition>
-        <from display_value="Begin">f2e5792b6f83a600dd36c017ad3ee4ea</from>
+        <condition display_value="Always">5ded1dcf4fdb2a00bd6fb895f110c774</condition>
+        <from display_value="Set Error Message">19ed1dcf4fdb2a00bd6fb895f110c774</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>76e53d2b6f83a600dd36c017ad3ee45b</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>51ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <to display_value="Set Paramters">fae5792b6f83a600dd36c017ad3ee4e9</to>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="End">dded5dcf4fdb2a00bd6fb895f110c764</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">32e5792b6f83a600dd36c017ad3ee4ea</condition>
-        <from display_value="Set Paramters">fae5792b6f83a600dd36c017ad3ee4e9</from>
+        <condition display_value="Always">19ed5dcf4fdb2a00bd6fb895f110c76a</condition>
+        <from display_value="Begin">95ed5dcf4fdb2a00bd6fb895f110c76a</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>f2e53d2b6f83a600dd36c017ad3ee45b</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>51ed5dcf4fdb2a00bd6fb895f110c76c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <to display_value="Change Environment">fae5792b6f83a600dd36c017ad3ee4ea</to>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Set Paramters">11ed1dcf4fdb2a00bd6fb895f110c775</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">3ee53d2b6f83a600dd36c017ad3ee45a</condition>
-        <from display_value="Change Environment">fae5792b6f83a600dd36c017ad3ee4ea</from>
+        <condition display_value="Always">d5ed5dcf4fdb2a00bd6fb895f110c765</condition>
+        <from display_value="Set Environment Status to Busy">91ed5dcf4fdb2a00bd6fb895f110c765</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:50</sys_created_on>
-        <sys_id>f6e53d2b6f83a600dd36c017ad3ee45b</sys_id>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>55ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:50</sys_updated_on>
-        <to display_value="End">3ae5792b6f83a600dd36c017ad3ee4ea</to>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Timer">19ed1dcf4fdb2a00bd6fb895f110c775</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">d1ed5dcf4fdb2a00bd6fb895f110c76a</condition>
+        <from display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>59ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Set Error Message">19ed1dcf4fdb2a00bd6fb895f110c774</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">dded5dcf4fdb2a00bd6fb895f110c767</condition>
+        <from display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>5ded5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Set Error Message">19ed1dcf4fdb2a00bd6fb895f110c774</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dded5dcf4fdb2a00bd6fb895f110c765</condition>
+        <from display_value="Set Environment Status">99ed5dcf4fdb2a00bd6fb895f110c765</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d1ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="End">dded5dcf4fdb2a00bd6fb895f110c764</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">51ed5dcf4fdb2a00bd6fb895f110c76a</condition>
+        <from display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d5ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Set Environment Status">99ed5dcf4fdb2a00bd6fb895f110c765</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">51ed5dcf4fdb2a00bd6fb895f110c768</condition>
+        <from display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>d9ed5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Set Environment Status to Busy">91ed5dcf4fdb2a00bd6fb895f110c765</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">55ed1dcf4fdb2a00bd6fb895f110c775</condition>
+        <from display_value="Set Paramters">11ed1dcf4fdb2a00bd6fb895f110c775</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c76a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">1ded5dcf4fdb2a00bd6fb895f110c764</condition>
+        <from display_value="Timer">19ed1dcf4fdb2a00bd6fb895f110c775</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 13:47:37</sys_created_on>
+        <sys_id>dded5dcf4fdb2a00bd6fb895f110c76b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
+        <to display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</to>
     </wf_transition>
     <var_dictionary action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -553,14 +1349,14 @@
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-18 18:33:49</sys_created_on>
-        <sys_id>f2e5792b6f83a600dd36c017ad3ee4e9</sys_id>
+        <sys_created_on>2016-11-29 13:47:36</sys_created_on>
+        <sys_id>15ed1dcf4fdb2a00bd6fb895f110c773</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 18:33:49</sys_updated_on>
-        <workflow_version display_value="Changes to Environment">b2e5792b6f83a600dd36c017ad3ee4e9</workflow_version>
+        <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
+        <workflow_version display_value="Skytap Workflow - Changes to Environment">d1ed1dcf4fdb2a00bd6fb895f110c773</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=7d44e1e36f83a600dd36c017ad3ee407^sys_id!=b2e5792b6f83a600dd36c017ad3ee4e9">
+    <wf_workflow_version action="update_multiple" query="workflow=7d44e1e36f83a600dd36c017ad3ee407^sys_id!=d1ed1dcf4fdb2a00bd6fb895f110c773">
         <published>false</published>
     </wf_workflow_version>
 </record_update>

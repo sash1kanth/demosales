@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[//Called when the 'OK' button gets clicked
+function continueOK(){
+	
+	var label = gel('label_id').value;
+	var value = document.getElementById("value").value;
+	var taskID = g_form.getUniqueValue();
+	//var taskID = 'e30fa2536fcf6600dd36c017ad3ee463';
+	var ajax = new GlideAjax('x_snc_skytap_demo.SWSSalesDemoAjaxUtils');
+	ajax.addParam('sysparm_name', 'addLabelToTemplate');
+	ajax.addParam('sysparm_taskID', taskID);
+	ajax.addParam('sysparm_value', value);
+	ajax.addParam('sysparm_label', label);
+	ajax.getXML(addResponse);
+}
+
+//Called when we get a response from the 'continueOK' function
+function addResponse(response){
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	if(answer == 'no')
+		{
+		g_form.addErrorMessage('Label is not added to Template because the Rest Message failed');
+	}
+	window.location.reload();
+	return false;
+}
+
+//Called when the 'Cancel' button gets clicked
+function continueCancel(){
+	//Close the dialog window
+	GlideDialogWindow.get().destroy();
+	return false;
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_skytap_demo_add_template_labels.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+   <TABLE BORDER="0" width="800px">
+      <TR>
+         <TD>
+            Please select the Label Categories you wish to add to this Template.
+         </TD>
+      </TR>
+      <TR>
+         <TD>
+            <!-- Include the 'ui_slushbucket' UI macro -->
+            <g:ui_reference name="label_id" id="label_id" table="x_snc_skytap_demo_label_category" completer="AJAXTableCompleter"  columns="label_category_id"/>
+         </TD>
+      </TR>
+	   <TR>
+         <TD>
+           Value
+         </TD>
+      </TR>
+	  <TR>
+         <TD>
+            <input type="text" id="value" value="Change_Text"></input>
+         </TD>
+      </TR>
+      <TR>
+         <TD>
+            <button onclick="continueOK()">Add</button>
+            <button onclick="continueCancel()">Cancel</button>
+         </TD>
+      </TR>
+   </TABLE>
+</j:jelly>
+]]></html>
+        <name>add_template_labels</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 19:50:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4301f2c34f5f2a00bd6fb895f110c7e7</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>add_template_labels</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_ui_page_4301f2c34f5f2a00bd6fb895f110c7e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 21:44:48</sys_updated_on>
+    </sys_ui_page>
+</record_update>

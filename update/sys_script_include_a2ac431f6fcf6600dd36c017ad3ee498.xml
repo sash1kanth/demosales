@@ -11,7 +11,7 @@
 
 SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getLabelCategories: function() {
-		/*var rec = new GlideRecord('x_snc_skytap_demo_available_templates');
+		var rec = new GlideRecord('x_snc_skytap_demo_available_templates');
 		rec.get(this.getParameter('sysparm_taskID'));
 		var ids = rec.mandatory_label_id;
 		var gr = new GlideRecord("x_snc_skytap_demo_label_category");
@@ -29,7 +29,8 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
 					item.setAttribute('text', gr.getValue('label_category'));
 				}
 			}
-		}*/
+		}
+		/*
 		var gr = new GlideRecord("x_snc_skytap_demo_label_category");
 		gr.query();
 		while (gr.next()) {
@@ -38,7 +39,50 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
 			item.setAttribute('text', gr.getValue('label_category'));
 			
 		}
-		
+ 		*/
+	},
+	
+	addLabelToTemplate: function() {
+		var rec = new GlideRecord('x_snc_skytap_demo_available_templates');
+		rec.get(this.getParameter('sysparm_taskID'));
+		var label = new GlideRecord("x_snc_skytap_demo_label_category");
+		label.get(this.getParameter('sysparm_label'));
+		var params = {};
+		params['templateid'] = rec.id.toString();
+		params['label_category'] = label.label_category.toString();
+		params['value'] = this.getParameter('sysparm_value');
+		var integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
+		var response = integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.add.templatelabel.name'), 'put',params);
+		if(response.haveError())
+			{
+			return 'no';
+		}
+		var gr = new GlideRecord('x_snc_skytap_demo_skytap_label_value');
+		var id = '';
+		if(!label.single_value)
+			{
+			gr.initialize();
+			gr.label_category = this.getParameter('sysparm_label');
+			gr.value = this.getParameter('sysparm_value');
+			id = gr.insert();
+			var gr1 = new GlideRecord('x_snc_skytap_demo_template_labels');
+			gr1.initialize();
+			gr1.label = id;
+			gr1.template = this.getParameter('sysparm_taskID');
+			var id2 = gr1.insert();
+		}
+		else
+			{
+			gr.initialize();
+			gr.addQuery('label_category', this.getParameter('sysparm_label'));
+			gr.query();
+			if(gr.next())
+				{
+				gr.value = this.getParameter('sysparm_value');
+				gr.update();
+			}
+		}
+		return 'yes';
 	},
 	
 	getLabelCategoriesSelected: function() {
@@ -70,7 +114,7 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_on>2016-11-18 06:16:20</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a2ac431f6fcf6600dd36c017ad3ee498</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>SWSSalesDemoAjaxUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -78,6 +122,6 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_a2ac431f6fcf6600dd36c017ad3ee498</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-23 18:43:56</sys_updated_on>
+        <sys_updated_on>2016-11-29 22:03:29</sys_updated_on>
     </sys_script_include>
 </record_update>

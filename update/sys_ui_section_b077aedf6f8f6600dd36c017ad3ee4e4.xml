@@ -5,13 +5,13 @@
             <element>label_category</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-11-18 03:32:44</sys_created_on>
-            <sys_id>57a7e6136fcf6600dd36c017ad3ee454</sys_id>
+            <sys_created_on>2016-11-29 21:56:18</sys_created_on>
+            <sys_id>bfbd83cb4f5f2a00bd6fb895f110c7f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_label_category" sys_domain="global" view="Default view">b077aedf6f8f6600dd36c017ad3ee4e4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-11-18 03:32:44</sys_updated_on>
+            <sys_updated_on>2016-11-29 21:56:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,27 @@
             <element>label_category_id</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-11-18 03:32:44</sys_created_on>
-            <sys_id>d7a7e6136fcf6600dd36c017ad3ee454</sys_id>
+            <sys_created_on>2016-11-29 21:56:18</sys_created_on>
+            <sys_id>33bd83cb4f5f2a00bd6fb895f110c7f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_label_category" sys_domain="global" view="Default view">b077aedf6f8f6600dd36c017ad3ee4e4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-11-18 03:32:44</sys_updated_on>
+            <sys_updated_on>2016-11-29 21:56:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>single_value</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-29 21:56:18</sys_created_on>
+            <sys_id>b3bd83cb4f5f2a00bd6fb895f110c7f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_label_category" sys_domain="global" view="Default view">b077aedf6f8f6600dd36c017ad3ee4e4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-29 21:56:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

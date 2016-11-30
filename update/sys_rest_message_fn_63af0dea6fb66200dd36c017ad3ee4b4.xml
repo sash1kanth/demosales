@@ -11,7 +11,7 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/templates/${templateid}/labels.json</rest_endpoint>
-        <rest_message display_value="SWS - Get Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
+        <rest_message display_value="SWS - Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>ajay-adm</sys_created_by>
         <sys_created_on>2016-11-03 02:57:08</sys_created_on>

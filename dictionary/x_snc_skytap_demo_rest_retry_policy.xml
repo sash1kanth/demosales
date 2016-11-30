@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Skytap Rest Retry Policy" max_length="40" name="x_snc_skytap_demo_rest_retry_policy" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Error Codes" max_length="4000" name="error_codes" type="string"/>
+        <element label="Interval ( In Seconds)" max_length="40" name="interval" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="JSON Check" max_length="4000" name="json_check" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Repeat" max_length="40" name="repeat" type="integer"/>
+        <element label="Rest Message" max_length="32" name="rest_message" reference="sys_rest_message" type="reference"/>
+        <element label="Rest Method" max_length="32" name="rest_method" reference="sys_rest_message_fn" type="reference"/>
+        <index name="index">
+            <element name="rest_method"/>
+        </index>
+        <index name="index2">
+            <element name="rest_message"/>
+        </index>
+    </element>
+</database>

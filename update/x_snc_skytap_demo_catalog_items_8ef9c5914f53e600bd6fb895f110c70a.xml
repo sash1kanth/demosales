@@ -66,7 +66,7 @@
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <workflow display_value="Sales Demo - Create Schedule For Template">e53fe5b06f0be200dd36c017ad3ee4b5</workflow>
+        <workflow display_value="Skytap Workflow - Sales Demo - Create Schedule For Template">e53fe5b06f0be200dd36c017ad3ee4b5</workflow>
     </x_snc_skytap_demo_catalog_items>
     <sys_translated_text action="delete_multiple" query="documentkey=8ef9c5914f53e600bd6fb895f110c70a"/>
     <fx_price action="delete_multiple" query="id=8ef9c5914f53e600bd6fb895f110c70a"/>

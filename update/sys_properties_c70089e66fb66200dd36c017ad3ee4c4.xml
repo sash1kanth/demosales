@@ -6,22 +6,22 @@
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
         <name>x_snc_skytap_demo.skytap.default.credential</name>
-        <read_roles>x_snc_skytap_demo.user</read_roles>
+        <read_roles/>
         <suffix>skytap.default.credential</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>ajay-adm</sys_created_by>
         <sys_created_on>2016-11-03 01:49:16</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>c70089e66fb66200dd36c017ad3ee4c4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.default.credential</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_properties_c70089e66fb66200dd36c017ad3ee4c4</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-23 23:16:48</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-27 19:02:08</sys_updated_on>
         <type>string</type>
         <value>Skyap Account</value>
         <write_roles>x_snc_skytap_demo.user</write_roles>

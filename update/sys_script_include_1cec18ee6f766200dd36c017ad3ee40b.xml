@@ -98,7 +98,7 @@ SWSSalesDemoTemplateIDUtils.prototype = {
 			{
 			if(!this.integrationUtils.checkForNil(jsonLabel[i]['id']))
 				{
-				var labelCategoryId = labelUtils.createOrUpdateLabelCategory(jsonLabel[i]['label_category_id'], jsonLabel[i]['label_category']);
+				var labelCategoryId = labelUtils.createOrUpdateLabelCategory(jsonLabel[i]['label_category_id'], jsonLabel[i]['label_category'], jsonLabel[i]['single_Value']);
 				var labelValueId = labelUtils.createOrUpdateLabelValues(jsonLabel[i]['id'], jsonLabel[i]['value'], labelCategoryId);
 				labelUtils.createLabelTemplateLink(labelValueId, templatesysid);
 			}
@@ -112,7 +112,7 @@ SWSSalesDemoTemplateIDUtils.prototype = {
         <sys_created_on>2016-11-02 23:15:12</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1cec18ee6f766200dd36c017ad3ee40b</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>SWSSalesDemoTemplateIDUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -120,6 +120,6 @@ SWSSalesDemoTemplateIDUtils.prototype = {
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_1cec18ee6f766200dd36c017ad3ee40b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-23 05:14:58</sys_updated_on>
+        <sys_updated_on>2016-11-29 21:58:19</sys_updated_on>
     </sys_script_include>
 </record_update>

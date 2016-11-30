@@ -38,6 +38,12 @@ SWSSalesDemoIntegrationUtils.prototype = {
 		return restMessage;
 	},
 	
+	sleep: function(delay) {
+		var delayMilli = delay * 1000;
+		var start = new GlideDateTime().getNumericValue();
+		while (new GlideDateTime().getNumericValue() < start + delayMilli);
+	},
+	
 	/**
  	* Logs every Integration run to a cached table. Runs are stored for debugging. Run table will be rotated
  	* @namespace Skytap
@@ -45,13 +51,17 @@ SWSSalesDemoIntegrationUtils.prototype = {
  	* @param {String} scheduleSysId - Schedule that triggers an Integration call
  	* @return {String} returns sys_id of newly inserted Integration run record
  	*/
-	insertIntegrationRun: function(credentialSysId, scheduleSysId) {
+	insertIntegrationRun: function(credentialSysId, restName, restFn, scheduleSysId) {
 		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
 		run.initialize();
 		run.start_time = new GlideDateTime();
 		if(!this.checkForNil(scheduleSysId)) {
 			run.skytap_schedule = scheduleSysId;
 		}
+		var restmessageGr = this.getRestMessageGr(restName);
+		run.rest_message = restmessageGr.sys_id;
+		var restfunctionGr = this.getRestMethodGr(restmessageGr, restFn);
+		run.rest_method = restfunctionGr.sys_id;
 		run.credential_used = credentialSysId;
 		run.status = 'In Progress';
 		run.insert();
@@ -65,12 +75,21 @@ SWSSalesDemoIntegrationUtils.prototype = {
  	* @param {String} credentialSysId - Instance of Skytap Credential record
  	* @return {String} returns newly created Run record
  	*/
-	insertIndividualIntegrationRun: function(credentialSysId) {
+	insertIndividualIntegrationRun: function(credentialSysId, restName, restFn, parameters, scheduleSysId) {
 		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
 		run.initialize();
 		run.start_time = new GlideDateTime();
 		run.credential_used = credentialSysId;
+		var restmessageGr = this.getRestMessageGr(restName);
+		run.rest_message = restmessageGr.sys_id;
+		var restfunctionGr = this.getRestMethodGr(restmessageGr, restFn);
+		run.rest_method = restfunctionGr.sys_id;
+		var jsonparse = new global.JSON();
+		run.parameters_used = jsonparse.encode(parameters);
 		run.status = 'In Progress';
+		if(!this.checkForNil(scheduleSysId)) {
+			run.skytap_schedule = scheduleSysId;
+		}
 		run.insert();
 		return run.sys_id;
 	},
@@ -82,12 +101,26 @@ SWSSalesDemoIntegrationUtils.prototype = {
  	* @param {String} response - Response Object
  	* @return {void} returns no value
  	*/
-	updateIntegrationRun: function(id, response) {
+	updateIntegrationRun: function(id, response, status, responseObj) {
 		var run = new GlideRecord('x_snc_skytap_demo_integration_run');
 		run.get(id);
 		run.end_time = new GlideDateTime();
 		run.response = response;
-		run.status = 'Completed';
+		run.status = status;
+		if(status == 'Errored')
+			{
+			if(!this.checkForNil(responseObj))
+				{
+				if(!this.checkForNil(responseObj.getStatusCode()))
+					{
+					run.error_message = 'Code : ' + responseObj.getStatusCode() + '\n\nError Message:\n' + responseObj.getErrorMessage();
+				}
+				else
+					{
+					run.error_message = responseObj;
+				}
+			}
+		}
 		run.update();
 	},
 	
@@ -127,6 +160,18 @@ SWSSalesDemoIntegrationUtils.prototype = {
 		return '';
 	},
 	
+	getRestMethodGr: function(restMessage, fn) {
+		var gr = new GlideRecord('sys_rest_message_fn');
+		gr.addQuery('rest_message', restMessage.sys_id);
+		gr.addQuery('function_name', fn);
+		gr.query();
+		if(gr.next())
+			{
+			return gr;
+		}
+		return '';
+	},
+	
 	/**
  	* Template Field mapping script
  	* @namespace Skytap
@@ -160,7 +205,51 @@ SWSSalesDemoIntegrationUtils.prototype = {
 			{
 			credentialGr = this.getDefaultCredential();
 		}
-		var runid = this.insertIndividualIntegrationRun(credentialGr.sys_id);
+		var runid = this.insertIndividualIntegrationRun(credentialGr.sys_id, name, fn, parameters);
+		try
+		{
+			var response = this.executeRestMessage(name,fn, parameters, credentialGr);
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			var retryGr = new GlideRecord('x_snc_skytap_demo_rest_retry_policy');
+			retryGr.addEncodedQuery('rest_message.name=' + name + '^rest_method.function_name=' + fn + '^active=true');
+			retryGr.query();
+			if(retryGr.next())
+				{
+				if(this.checkForRetry(retryGr, response))
+					{
+					this.updateIntegrationRun(runid, response.getBody(), 'Retried');
+					for(var i = 1; i <= retryGr.repeat; i++)
+						{
+						this.sleep(retryGr.interval);
+						runid = this.insertIndividualIntegrationRun(credentialGr.sys_id, name, fn, parameters);
+						response = this.executeRestMessage(name,fn, parameters, credentialGr);
+						if(!this.checkForRetry(retryGr, response))
+							{
+							break;
+						}
+						this.updateIntegrationRun(runid, response.getBody(), 'Retried');
+					}
+				}
+			}
+			if(httpStatus < 200 || httpStatus >= 300 || response.haveError())
+				{
+				this.updateIntegrationRun(runid, response.getBody(), 'Errored', response);
+			}
+			else
+				{
+				this.updateIntegrationRun(runid, response.getBody(), 'Completed');
+			}
+			return response;
+		}
+		catch (ex) {
+			this.updateIntegrationRun(runid, ex, 'Errored', ex);
+			return ex;
+		}
+	},
+	
+	executeRestMessage: function(name, fn, parameters, credentialGr)
+	{
 		var restmessageGr = this.getRestMessageGr(name);
 		var restMessageName = restmessageGr.sys_scope.scope + "." + restmessageGr.name;
 		var restMessage = this.buildRestMessage(restMessageName, fn, credentialGr);
@@ -169,9 +258,41 @@ SWSSalesDemoIntegrationUtils.prototype = {
 			restMessage.setStringParameterNoEscape(key, parameters[key]);
 		}
 		var response = restMessage.execute();
-		var responseBody = response.getBody();
-		this.updateIntegrationRun(runid, responseBody);
 		return response;
+	},
+	
+	
+	checkForRetry: function(retryGr, response)
+	{
+		var httpStatus = response.getStatusCode();
+		var errorCodes = retryGr.error_codes.toString();
+		var retryCheck = false;
+		if(errorCodes.indexOf(httpStatus + '') > -1)
+			{
+			retryCheck = true;
+		}
+		else
+			{
+			var jsonparse = new global.JSON();
+			var jsonLabel = jsonparse.decode(response.getBody());
+			var retryValues = new GlideRecord('x_snc_skytap_demo_retry_value');
+			retryValues.addQuery('retry_policy', retryGr.sys_id);
+			retryValues.query();
+			while(retryValues.next())
+				{
+				if(jsonLabel[retryValues.name.toString()] == retryValues.value.toString())
+					{
+					retryCheck = true;
+					break;
+				}
+			}
+		}
+		if(retryCheck)
+			{
+			return true;
+		}
+		return false;
+		
 	},
 	
 	/**
@@ -183,8 +304,8 @@ SWSSalesDemoIntegrationUtils.prototype = {
  	*/
 	getDateTimeFormatForRest: function(datetime) {
 		var gdt = new GlideDateTime(datetime);
-		var displayValue = gdt.getDisplayValueInternal();
-		var formatDate = gdt.getYearLocalTime() + '/' + gdt.getMonthLocalTime() + '/' + gdt.getDayOfMonthLocalTime();
+		var displayValue = gdt.getValue();
+		var formatDate = gdt.getYearUTC() + '/' + gdt.getMonthUTC() + '/' + gdt.getDayOfMonthUTC();
 		var displayValueArr = displayValue.split(' ');
 		var timeArr = displayValueArr[1].split(':');
 		formatDate += ' ' + timeArr[0] + ':' + timeArr[1];
@@ -210,14 +331,14 @@ SWSSalesDemoIntegrationUtils.prototype = {
         <sys_created_on>2016-10-29 20:31:35</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>ff609b014ffe2200bd6fb895f110c7fa</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name>SWSSalesDemoIntegrationUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_ff609b014ffe2200bd6fb895f110c7fa</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-11 07:35:22</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-11-29 12:01:24</sys_updated_on>
     </sys_script_include>
 </record_update>

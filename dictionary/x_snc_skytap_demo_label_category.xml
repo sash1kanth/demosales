@@ -3,5 +3,6 @@
     <element label="Skytap Label Category" max_length="40" name="x_snc_skytap_demo_label_category" type="collection">
         <element attributes="edge_encryption_enabled=true" display="true" label="Label Category" max_length="40" name="label_category" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Label Category Id" max_length="40" name="label_category_id" type="string"/>
+        <element label="Single Value" max_length="40" name="single_value" type="boolean"/>
     </element>
 </database>

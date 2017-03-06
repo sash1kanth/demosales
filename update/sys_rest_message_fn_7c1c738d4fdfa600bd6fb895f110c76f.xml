@@ -11,11 +11,11 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/label_categories.json</rest_endpoint>
-        <rest_message display_value="SWS - Get Label Categories">59fbbf4d4fdfa600bd6fb895f110c79a</rest_message>
+        <rest_message display_value="Label Categories">59fbbf4d4fdfa600bd6fb895f110c79a</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-23 20:10:51</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7c1c738d4fdfa600bd6fb895f110c76f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>get</sys_name>

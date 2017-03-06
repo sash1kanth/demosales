@@ -12,7 +12,7 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[This template creates a single server installation of Active Directory. Domain Administrator password will be the one retrieved from the instance. For adding members to the domain, ensure that they are launched in domain member security group created by this template and then configure them to use this instance's private IP as the DNS server.  The server will be configured into specified VPC and subnet provided from user inputs. **WARNING** This template creates Amazon EC2 Windows instance and related resources. You will be billed for the AWS resources used if you create a stack from this template.]]></description>
+        <description><![CDATA[This template creates a single server installation of Active Directory. Domain Administrator password will be the one retrieved from the instance. For adding members to the domain, ensure that they are launched in domain member security group created by this template and then configure them to use this instance&#39;s private IP as the DNS server.  The server will be configured into specified VPC and subnet provided from user inputs. **WARNING** This template creates Amazon EC2 Windows instance and related resources. You will be billed for the AWS resources used if you create a stack from this template.]]></description>
         <entitlement_script/>
         <group/>
         <icon/>
@@ -53,19 +53,19 @@
         <skip_approval>true</skip_approval>
         <start_closed>false</start_closed>
         <sys_class_name>sc_cloudformation_cat_item</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 21:59:55</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8eee02d6ff62200dd36c017ad3ee4d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>CloudFormation Stack - Active Directory uses existing VPC with private subnet</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sc_cloudformation_cat_item_e8eee02d6ff62200dd36c017ad3ee4d8</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-10-30 21:59:55</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:37:58</sys_updated_on>
         <template/>
         <type>item</type>
         <use_federation>false</use_federation>

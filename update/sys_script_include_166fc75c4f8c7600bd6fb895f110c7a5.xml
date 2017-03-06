@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoUserIDUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Sashi Maddali&#13;
+Description: Sales Demo Project utils. All utility methods for Project related calls.&#13;
+</description>
+        <name>SWSSalesDemoUserIDUtils</name>
+        <script><![CDATA[var SWSSalesDemoUserIDUtils = Class.create();
+SWSSalesDemoUserIDUtils.prototype = {
+	/**
+ 	* Initilization of Script Class. Takes input during initilizing and assign to class variables
+ 	* @namespace Skytap
+ 	* @method initialize
+ 	* @param {String} String - ID of a Project
+ 	* @return {void} none
+ 	*/
+	initialize: function(userid, credentialGr) {
+		this.userid = userid;
+		this.integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
+		this.usersTable = 'x_snc_skytap_demo_user_profiles';
+		var commonParams = {};
+		commonParams['userid'] = userid;
+		this.commonParams = commonParams;
+		this.credentialGr = '';
+		if(!this.integrationUtils.checkForNil(credentialGr))
+			{
+			this.credentialGr = credentialGr;
+		}
+	},
+	
+	process: function() {
+		var response = this.integrationUtils.retriveInfoForRestMessage(gs.getProperty('x_snc_skytap_demo.skytap.restmessage.userid.name'), 'get', this.commonParams, this.credentialGr);
+		var jsonparse = new global.JSON();
+		var jsonresponse = jsonparse.decode(response.getBody());
+		this._insertOrUpdate(jsonresponse);
+		
+	},
+	
+	_insertOrUpdate: function(jsonobject) {
+		var usersysid = '';
+		var gr = new GlideRecord(this.usersTable);
+		gr.addQuery('id', this.userid);
+		gr.query();
+		if(gr.next())
+			{
+			gr.last_discovered_time = new GlideDateTime();
+			this.integrationUtils.setFieldsForGR(gr, jsonobject, this.usersTable);
+			usersysid = gr.update();
+		}
+		else
+			{
+			var grinsert = new GlideRecord(this.usersTable);
+			grinsert.initialize();
+			this.integrationUtils.setFieldsForGR(grinsert, jsonobject, this.usersTable);
+			grinsert.last_discovered_time = new GlideDateTime();
+			usersysid = grinsert.insert();
+		}
+	},
+	
+	type: 'SWSSalesDemoUserIDUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-28 15:47:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>166fc75c4f8c7600bd6fb895f110c7a5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SWSSalesDemoUserIDUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_166fc75c4f8c7600bd6fb895f110c7a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:36:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

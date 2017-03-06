@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoUserUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>Author: Sashi Maddali, Krishna Korada
+Description: 
+Main library for the Skytap SWS Demo Sales Plugin</description>
+        <name>SWSSalesDemoUserUtils</name>
+        <script><![CDATA[var SWSSalesDemoUserUtils = Class.create();
+SWSSalesDemoUserUtils.prototype = {
+	initialize: function() {
+	},
+	
+	retriveAllUsers: function(scheduleGr) {
+		var integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
+		var credentialGr = scheduleGr.skytap_credential;
+		if(integrationUtils.checkForNil(credentialGr))
+			{
+			credentialGr = integrationUtils.getDefaultCredential();
+		}
+		var runid = integrationUtils.insertIntegrationRun(scheduleGr.skytap_credential.sys_id, scheduleGr.rest_message.name, scheduleGr.rest_method.function_name, scheduleGr.sys_id);
+		var name = scheduleGr.rest_message.sys_scope.scope + "." + scheduleGr.rest_message.name;
+		var fn = scheduleGr.rest_method.function_name + "";
+		var restMessage = integrationUtils.buildRestMessage(name, fn, credentialGr);
+		var response = restMessage.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		this._processRestResponse(responseBody, scheduleGr);
+		integrationUtils.updateIntegrationRun(runid, responseBody, 'Completed');
+	},
+	
+	_processRestResponse: function(response, schedule) {
+		var jsonparse = new global.JSON();
+		var jsonresponse = jsonparse.decode(response);
+		for(var key in jsonresponse)
+			{
+			gs.info('Ajay Users ' + jsonresponse[key]['id']);
+			var utils = new SWSSalesDemoUserIDUtils(jsonresponse[key]['id'], schedule.skytap_credential);
+			utils.process();
+		}
+	},
+	
+	type: 'SWSSalesDemoUserUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-28 15:31:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a3bb071c4f8c7600bd6fb895f110c7f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SWSSalesDemoUserUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_a3bb071c4f8c7600bd6fb895f110c7f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:37:30</sys_updated_on>
+    </sys_script_include>
+</record_update>

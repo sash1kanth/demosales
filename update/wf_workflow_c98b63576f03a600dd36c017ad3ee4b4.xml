@@ -48,7 +48,7 @@
         <sys_class_name>wf_workflow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:29:08</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c98b63576f03a600dd36c017ad3ee4b4</sys_id>
@@ -473,7 +473,7 @@ workflow.scratchpad.parms = parms;</value>
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:30:42</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>27cb27576f03a600dd36c017ad3ee4c1</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Value</sys_name>
@@ -552,7 +552,7 @@ workflow.scratchpad.parms = parms;</value>
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:31:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>400ca7576f03a600dd36c017ad3ee49e</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Scheduleid</sys_name>
@@ -631,7 +631,7 @@ workflow.scratchpad.parms = parms;</value>
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:30:14</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>699be3576f03a600dd36c017ad3ee431</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Label Category</sys_name>
@@ -665,7 +665,7 @@ workflow.scratchpad.parms = parms;</value>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-18 08:30:43</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>08eba3576f03a600dd36c017ad3ee4f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Value</sys_name>
@@ -692,7 +692,7 @@ workflow.scratchpad.parms = parms;</value>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-18 08:31:52</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>5d2ce7576f03a600dd36c017ad3ee42c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Scheduleid</sys_name>
@@ -719,7 +719,7 @@ workflow.scratchpad.parms = parms;</value>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-18 08:30:15</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>ddcb27576f03a600dd36c017ad3ee422</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Label Category</sys_name>

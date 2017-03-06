@@ -11,13 +11,13 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/templates/${templateid}/labels.json</rest_endpoint>
-        <rest_message display_value="SWS - Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
+        <rest_message display_value="Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 02:57:08</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>63af0dea6fb66200dd36c017ad3ee4b4</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>get</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
@@ -25,7 +25,7 @@
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_rest_message_fn_63af0dea6fb66200dd36c017ad3ee4b4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-18 03:18:35</sys_updated_on>
+        <sys_updated_on>2017-02-23 16:37:13</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

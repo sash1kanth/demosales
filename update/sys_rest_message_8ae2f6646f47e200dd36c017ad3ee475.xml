@@ -6,25 +6,29 @@
         <basic_auth_password/>
         <basic_auth_profile display_value="Skytap SWS Account">433a83cd4fbe2200bd6fb895f110c74f</basic_auth_profile>
         <basic_auth_user/>
-        <description>Gets Template by ID listed for Skytap Cloud Account User.</description>
-        <name>SWS - Get Skytap Project Info</name>
+        <description>Perform operations on a specific project in Skytap. E.g. get details&#13;
+&#13;
+Help Link: &#13;
+http://help.skytap.com/API_v2_Documentation.html?Highlight=projects#Getprojectdescription&#13;
+</description>
+        <name>Project</name>
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/projects/${projectid}.json</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 15:18:31</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>8ae2f6646f47e200dd36c017ad3ee475</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>SWS - Get Skytap Project Info</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Project</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_rest_message_8ae2f6646f47e200dd36c017ad3ee475</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-09 15:18:31</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:37:25</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message>

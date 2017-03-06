@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sysauto_script" label="SkyTap Import Schedules" max_length="40" name="x_snc_skytap_demo_import_schedules" type="collection">
+    <element extends="sysauto_script" label="Skytap metadata import modules" max_length="40" name="x_snc_skytap_demo_import_schedules" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Handler Method" max_length="40" name="handler_method" type="string"/>
         <element label="Handler Script" max_length="1000" name="handler_script" type="string"/>
         <element label="Rest Message" max_length="32" name="rest_message" reference="sys_rest_message" type="reference"/>

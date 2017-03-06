@@ -48,7 +48,7 @@
         <sys_class_name>wf_workflow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 17:16:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d44e1e36f83a600dd36c017ad3ee407</sys_id>
@@ -1295,7 +1295,7 @@ answer = 0;</value>
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 17:17:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ec54a5e36f83a600dd36c017ad3ee440</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Parameters</sys_name>
@@ -1329,7 +1329,7 @@ answer = 0;</value>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-18 17:17:17</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>6564e1e36f83a600dd36c017ad3ee4c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Parameters</sys_name>

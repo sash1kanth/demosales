@@ -4,77 +4,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5243f511d71321004f6a0eca5e6103c7</list_id>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-20 20:07:05</sys_created_on>
-            <sys_id>5643f511d71321004f6a0eca5e6103c7</sys_id>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>96b58d124fa72200bd6fb895f110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-20 20:07:05</sys_updated_on>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_scope</element>
-            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5243f511d71321004f6a0eca5e6103c7</list_id>
+            <element>access</element>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-20 20:07:05</sys_created_on>
-            <sys_id>9643f511d71321004f6a0eca5e6103c7</sys_id>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>1ab58d124fa72200bd6fb895f110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-20 20:07:05</sys_updated_on>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5243f511d71321004f6a0eca5e6103c7</list_id>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-20 20:07:05</sys_created_on>
-            <sys_id>d643f511d71321004f6a0eca5e6103c7</sys_id>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>9ab58d124fa72200bd6fb895f110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-20 20:07:05</sys_updated_on>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>description</element>
-            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5243f511d71321004f6a0eca5e6103c7</list_id>
+            <element>client_callable</element>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-20 20:07:05</sys_created_on>
-            <sys_id>1a43f511d71321004f6a0eca5e6103c7</sys_id>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>1eb58d124fa72200bd6fb895f110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-20 20:07:05</sys_updated_on>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_on</element>
-            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5243f511d71321004f6a0eca5e6103c7</list_id>
+            <element>description</element>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2014-09-20 20:07:05</sys_created_on>
-            <sys_id>5a43f511d71321004f6a0eca5e6103c7</sys_id>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>9eb58d124fa72200bd6fb895f110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2014-09-20 20:07:05</sys_updated_on>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>script</element>
+            <list_id display_value="sys_script_include" element="NULL" name="sys_script_include" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">52b58d124fa72200bd6fb895f110c762</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:15</sys_created_on>
+            <sys_id>12b58d124fa72200bd6fb895f110c763</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ajay-adm</sys_updated_by>
+            <sys_updated_on>2016-12-09 14:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -87,21 +102,21 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>ajay-adm</sys_created_by>
-            <sys_created_on>2016-10-29 20:28:43</sys_created_on>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-09 14:22:41</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>76605f014ffe2200bd6fb895f110c7b9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>34d589124fa72200bd6fb895f110c760</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>sys_script_include</sys_name>
             <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
             <sys_update_name>sys_ui_list_sys_script_include_null</sys_update_name>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-10-29 20:28:43</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-23 16:36:53</sys_updated_on>
             <sys_user display_value="Ajay Admin">57d653c84f322200bd6fb895f110c7d4</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

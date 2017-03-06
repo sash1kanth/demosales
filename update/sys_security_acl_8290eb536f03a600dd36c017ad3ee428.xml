@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 07:41:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8290eb536f03a600dd36c017ad3ee428</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_skytap_demo_variable_label_mapping</sys_name>

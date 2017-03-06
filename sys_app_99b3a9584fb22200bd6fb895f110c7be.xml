@@ -27,7 +27,7 @@
         <sys_updated_on>2016-10-27 04:38:19</sys_updated_on>
         <template/>
         <trackable>true</trackable>
-        <user_role display_value="x_snc_skytap_demo.user" name="x_snc_skytap_demo.user">95b3ad584fb22200bd6fb895f110c751</user_role>
+        <user_role display_value="skytap-presales-sme" name="skytap-presales-sme">95b3ad584fb22200bd6fb895f110c751</user_role>
         <vendor/>
         <vendor_prefix/>
         <version>1.0.0</version>

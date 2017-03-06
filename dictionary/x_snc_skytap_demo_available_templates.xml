@@ -2,20 +2,26 @@
 <database>
     <element label="SkyTap Available Templates" max_length="40" name="x_snc_skytap_demo_available_templates" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Item Description" max_length="4000" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" display="true" label="ID" max_length="40" name="id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Labels" max_length="4000" name="labels" type="string"/>
         <element label="Last Discovered Time" max_length="40" name="last_discovered_time" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Mandatory Label Id" max_length="4000" name="mandatory_label_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Item Name" max_length="100" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Networks" max_length="40" name="network_count" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Number of SVMs" max_length="40" name="number_of_svms" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Number of VMs" max_length="40" name="number_of_vms" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Owner Name" max_length="100" name="owner_name" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Project" max_length="1024" name="project" reference="x_snc_skytap_demo_project" type="glide_list"/>
         <element label="Public" max_length="40" name="public" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Public IPs" max_length="100" name="public_ips" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Raw XML" max_length="4000" name="raw_xml" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Region" max_length="40" name="region" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Region Backend" max_length="40" name="region_backend" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Size" max_length="40" name="size" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="Not Requested" label="State" max_length="40" name="state" type="choice">
+        <element attributes="edge_encryption_enabled=true" label="Skytap Description" max_length="4000" name="skytap_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Skytap Name" max_length="40" name="skytap_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Not Requested" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Not Requested" sequence="0" value="Not Requested"/>
                 <element label="Requested" sequence="1" value="Requested"/>

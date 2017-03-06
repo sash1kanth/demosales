@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-29 13:01:26</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>0553190f4fdb2a00bd6fb895f110c732</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Error Message</sys_name>

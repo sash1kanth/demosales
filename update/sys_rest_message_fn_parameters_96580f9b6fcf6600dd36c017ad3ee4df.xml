@@ -6,7 +6,7 @@
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 05:55:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>96580f9b6fcf6600dd36c017ad3ee4df</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>scheduleid</sys_name>

@@ -3,7 +3,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Windows Demo Template ">90e30c1d6f9be600dd36c017ad3ee47e</cat_item>
+        <cat_item display_value="">90e30c1d6f9be600dd36c017ad3ee47e</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -55,7 +55,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-30 05:50:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d53a38574fdf2a00bd6fb895f110c71d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>SWS Int Test</sys_name>

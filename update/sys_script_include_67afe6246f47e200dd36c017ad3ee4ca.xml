@@ -26,7 +26,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
 		commonParams['projectid'] = projectid;
 		this.commonParams = commonParams;
 		this.credentialGr = '';
-		if(this.integrationUtils.checkForNil())
+		if(!this.integrationUtils.checkForNil(credentialGr))
 			{
 			this.credentialGr = credentialGr;
 		}
@@ -106,6 +106,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
  	* @return {String} returns record sys_id
  	*/
 	_createM2MProjectTemplate: function(projectsysid, templatesysid) {
+		this.updateTemplateWithProject(projectsysid, templatesysid);
 		var gr = new GlideRecord('x_snc_skytap_demo_m2m_project_template');
 		gr.addQuery('project', projectsysid);
 		gr.addQuery('template', templatesysid);
@@ -120,14 +121,32 @@ SWSSalesDemoProjectIDUtils.prototype = {
 		}
 	},
 	
+	updateTemplateWithProject: function(projectsysid, templatesysid) {
+		var gr = new GlideRecord('x_snc_skytap_demo_available_templates');
+		gr.get(templatesysid);
+		var projects = gr.project;
+		if(projects == '')
+			{
+			gr.project = projectsysid;
+		}
+		else
+			{
+			if(projects.indexOf(projectsysid) < 0)
+				{
+				gr.project = projects + ',' + projectsysid;
+			}
+		}
+		gr.update();
+	},
+	
 	type: 'SWSSalesDemoProjectIDUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 15:04:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>67afe6246f47e200dd36c017ad3ee4ca</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>SWSSalesDemoProjectIDUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -135,6 +154,6 @@ SWSSalesDemoProjectIDUtils.prototype = {
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_67afe6246f47e200dd36c017ad3ee4ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-23 05:18:12</sys_updated_on>
+        <sys_updated_on>2017-02-23 21:05:41</sys_updated_on>
     </sys_script_include>
 </record_update>

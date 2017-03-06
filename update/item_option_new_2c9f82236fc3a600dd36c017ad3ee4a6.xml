@@ -55,7 +55,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 20:25:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2c9f82236fc3a600dd36c017ad3ee4a6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Skytap SWS Multi Lables</sys_name>

@@ -9,19 +9,19 @@
         <name>image_skytap_catalog.png</name>
         <size_bytes>6432</size_bytes>
         <sys_class_name>db_image</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 05:53:36</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>4df7f9e66ff66200dd36c017ad3ee4c2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>image_skytap_catalog.png</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>db_image_4df7f9e66ff66200dd36c017ad3ee4c2</sys_update_name>
-        <sys_updated_by>ajay-adm</sys_updated_by>
-        <sys_updated_on>2016-11-09 12:43:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:37:07</sys_updated_on>
         <thumbnail/>
         <width>32</width>
     </db_image>

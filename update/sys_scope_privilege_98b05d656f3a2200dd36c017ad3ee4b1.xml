@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-31 00:27:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>98b05d656f3a2200dd36c017ad3ee4b1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>RESTMessageV2</sys_name>

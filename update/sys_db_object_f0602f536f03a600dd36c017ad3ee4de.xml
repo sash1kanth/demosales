@@ -21,7 +21,7 @@
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 07:41:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f0602f536f03a600dd36c017ad3ee4de</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Skytap Variable Label Mapping</sys_name>
@@ -33,7 +33,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-18 07:41:24</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_snc_skytap_demo.user" name="x_snc_skytap_demo.user">95b3ad584fb22200bd6fb895f110c751</user_role>
+        <user_role display_value="skytap-presales-sme" name="skytap-presales-sme">95b3ad584fb22200bd6fb895f110c751</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>

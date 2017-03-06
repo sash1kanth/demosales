@@ -11,11 +11,11 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/schedules/${scheduleid}.json</rest_endpoint>
-        <rest_message display_value="SWS - Get Schedule Information">48380f9b6fcf6600dd36c017ad3ee40a</rest_message>
+        <rest_message display_value="Schedule">48380f9b6fcf6600dd36c017ad3ee40a</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 05:55:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d448cb9b6fcf6600dd36c017ad3ee45b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>post</sys_name>

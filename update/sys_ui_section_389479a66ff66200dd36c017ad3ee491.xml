@@ -326,13 +326,13 @@
             <name>x_snc_skytap_demo_catalog_items</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
-            <sys_created_by>ajay-adm</sys_created_by>
+            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-03 05:38:20</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>389479a66ff66200dd36c017ad3ee491</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_name>x_snc_skytap_demo_catalog_items</sys_name>
             <sys_overrides/>
             <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
@@ -340,8 +340,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
             <sys_update_name>sys_ui_section_389479a66ff66200dd36c017ad3ee491</sys_update_name>
-            <sys_updated_by>ajay-adm</sys_updated_by>
-            <sys_updated_on>2016-11-03 05:38:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-23 16:36:56</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

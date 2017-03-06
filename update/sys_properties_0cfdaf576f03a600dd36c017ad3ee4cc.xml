@@ -2,18 +2,18 @@
 <record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
-        <description>Workflow to be Triggered for Adding Label to Environment</description>
+        <description>Workflow to be triggered for adding label to environment</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
         <name>x_snc_skytap_demo.skytap.workflow.labeltoenvironment.id</name>
-        <read_roles/>
+        <read_roles>skytap-presales-manager</read_roles>
         <suffix>skytap.workflow.labeltoenvironment.id</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:39:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>0cfdaf576f03a600dd36c017ad3ee4cc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.workflow.labeltoenvironment.id</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy/>
@@ -21,10 +21,10 @@
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_properties_0cfdaf576f03a600dd36c017ad3ee4cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-29 13:18:32</sys_updated_on>
+        <sys_updated_on>2017-02-23 16:13:02</sys_updated_on>
         <type>string</type>
         <value>Skytap Workflow - Add Label to Environment</value>
-        <write_roles/>
+        <write_roles>skytap-presales-manager</write_roles>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=0cfdaf576f03a600dd36c017ad3ee4cc"/>
 </record_update>

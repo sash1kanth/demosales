@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1bc155164fa72200bd6fb895f110c7b0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_skytap_demo_import_schedules"&gt;
+    &lt;x_snc_skytap_demo_import_schedules action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;condition/&gt;
+        &lt;conditional&gt;false&lt;/conditional&gt;
+        &lt;handler_method&gt;retriveAllLabels(current)&lt;/handler_method&gt;
+        &lt;handler_script&gt;new x_snc_skytap_demo.SWSSalesDemoLabelUtils()&lt;/handler_script&gt;
+        &lt;name&gt;Import Label Categories metadata&lt;/name&gt;
+        &lt;rest_message display_value="Label Categories"&gt;59fbbf4d4fdfa600bd6fb895f110c79a&lt;/rest_message&gt;
+        &lt;rest_method display_value="get"&gt;7c1c738d4fdfa600bd6fb895f110c76f&lt;/rest_method&gt;
+        &lt;run_as display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;
+        &lt;run_as_tz/&gt;
+        &lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;
+        &lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;
+        &lt;run_period/&gt;
+        &lt;run_start&gt;2016-12-09 15:15:01&lt;/run_start&gt;
+        &lt;run_time&gt;1970-01-01 08:00:00&lt;/run_time&gt;
+        &lt;run_type&gt;on_demand&lt;/run_type&gt;
+        &lt;script&gt;&lt;![CDATA[new x_snc_skytap_demo.SWSSalesDemoLabelUtils().retriveAllLabels(current);]]&gt;&lt;/script&gt;
+        &lt;skytap_credential/&gt;
+        &lt;sys_class_name&gt;x_snc_skytap_demo_import_schedules&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ajay-adm&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2016-12-09 15:16:22&lt;/sys_created_on&gt;
+        &lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;
+        &lt;sys_id&gt;1bc155164fa72200bd6fb895f110c7b0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Import Label Categories metadata&lt;/sys_name&gt;
+        &lt;sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo"&gt;99b3a9584fb22200bd6fb895f110c7be&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+        &lt;sys_scope display_value="Skytap Demo Sales"&gt;99b3a9584fb22200bd6fb895f110c7be&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;x_snc_skytap_demo_import_schedules_1bc155164fa72200bd6fb895f110c7b0&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;ajay-adm&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2016-12-20 16:20:42&lt;/sys_updated_on&gt;
+        &lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;
+    &lt;/x_snc_skytap_demo_import_schedules&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-09 16:03:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0ddc15d64fa72200bd6fb895f110c7d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Import Label Categories metadata</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_metadata_link_0ddc15d64fa72200bd6fb895f110c7d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-23 16:36:42</sys_updated_on>
+        <tablename>x_snc_skytap_demo_import_schedules</tablename>
+    </sys_metadata_link>
+</record_update>

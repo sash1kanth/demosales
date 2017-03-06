@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_properties_category_m2m">
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
-        <category display_value="SkyTap Properties">5ecacc514f13e600bd6fb895f110c7e1</category>
+        <category display_value="Skytap Properties">5ecacc514f13e600bd6fb895f110c7e1</category>
         <order>100</order>
         <property display_value="x_snc_skytap_demo.skytap.default.credential" name="x_snc_skytap_demo.skytap.default.credential">c70089e66fb66200dd36c017ad3ee4c4</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-23 21:15:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8afa00914f13e600bd6fb895f110c764</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.default.credential.SkyTap Properties</sys_name>

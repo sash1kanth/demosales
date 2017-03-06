@@ -48,7 +48,7 @@
         <sys_class_name>wf_workflow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 12:30:40</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9a4c058b4fdb2a00bd6fb895f110c779</sys_id>
@@ -364,7 +364,7 @@ Error Message: ${workflow.inputs.u_error_message}^state=4^active=false^EQ</value
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 13:01:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ac43190f4fdb2a00bd6fb895f110c709</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Error Message</sys_name>
@@ -398,7 +398,7 @@ Error Message: ${workflow.inputs.u_error_message}^state=4^active=false^EQ</value
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-29 13:01:26</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>0553190f4fdb2a00bd6fb895f110c732</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Error Message</sys_name>

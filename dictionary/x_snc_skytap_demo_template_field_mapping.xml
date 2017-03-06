@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Skytap Template Field Mapping" max_length="40" name="x_snc_skytap_demo_template_field_mapping" type="collection">
+    <element label="Skytap Field Mapping" max_length="40" name="x_snc_skytap_demo_template_field_mapping" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Skytap Field" max_length="40" name="skytap_field" type="string"/>
         <element attributes="base_start=true" label="Target Table" max_length="80" name="target_table" type="table_name"/>
-        <element attributes="edge_encryption_enabled=true" label="Template Field" max_length="40" name="template_field" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Field" max_length="40" name="template_field" type="string"/>
     </element>
 </database>

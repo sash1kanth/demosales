@@ -2,11 +2,15 @@
 <database>
     <element label="Skytap Variable Label Mapping" max_length="40" name="x_snc_skytap_demo_variable_label_mapping" type="collection">
         <element label="Label Category" max_length="32" name="label_category" reference="x_snc_skytap_demo_label_category" type="reference"/>
+        <element label="Template" max_length="32" name="template" reference="x_snc_skytap_demo_available_templates" type="reference"/>
         <element label="Variable" max_length="32" name="variable" reference="item_option_new" type="reference"/>
         <index name="index">
-            <element name="variable"/>
+            <element name="template"/>
         </index>
         <index name="index2">
+            <element name="variable"/>
+        </index>
+        <index name="index3">
             <element name="label_category"/>
         </index>
     </element>

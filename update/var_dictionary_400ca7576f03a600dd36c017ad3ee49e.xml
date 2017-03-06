@@ -57,7 +57,7 @@
         <sys_class_name>var_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:31:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>400ca7576f03a600dd36c017ad3ee49e</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Scheduleid</sys_name>

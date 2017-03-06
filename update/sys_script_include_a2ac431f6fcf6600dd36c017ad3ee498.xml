@@ -105,6 +105,17 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
 		rec.get(taskID);
 		rec.mandatory_label_id = this.getParameter('sysparm_values');
 		rec.update();
+		var utils = new x_snc_skytap_demo.SWSSalesDemoCatalogItemCreator();
+		utils.updateCatalogItem(rec);
+		var gr = new GlideRecord('x_snc_skytap_demo_template_labels');
+		gr.addEncodedQuery('template=' + taskID + '^label.label_category.sys_idIN' + this.getParameter('sysparm_values'));
+		gr.query();
+		while(gr.next())
+			{
+			gr.mandatory = true;
+			gr.update();
+		}
+		
 	},
 	
 });
@@ -114,7 +125,7 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_on>2016-11-18 06:16:20</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a2ac431f6fcf6600dd36c017ad3ee498</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>SWSSalesDemoAjaxUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -122,6 +133,6 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_a2ac431f6fcf6600dd36c017ad3ee498</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-29 22:03:29</sys_updated_on>
+        <sys_updated_on>2017-02-23 20:40:14</sys_updated_on>
     </sys_script_include>
 </record_update>

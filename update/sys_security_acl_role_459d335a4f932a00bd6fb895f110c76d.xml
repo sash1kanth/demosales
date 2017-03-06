@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-27 17:29:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>459d335a4f932a00bd6fb895f110c76d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_skytap_demo_rest_retry_policy.x_snc_skytap_demo.user</sys_name>
@@ -16,7 +16,7 @@
         <sys_update_name>sys_security_acl_role_459d335a4f932a00bd6fb895f110c76d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-27 17:29:50</sys_updated_on>
-        <sys_user_role display_value="x_snc_skytap_demo.user" name="x_snc_skytap_demo.user">95b3ad584fb22200bd6fb895f110c751</sys_user_role>
+        <sys_user_role display_value="skytap-presales-sme" name="skytap-presales-sme">95b3ad584fb22200bd6fb895f110c751</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

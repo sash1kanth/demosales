@@ -16,15 +16,21 @@ SWSSalesDemoTemplateUtils.prototype = {
 	
 	retriveAllTemplates: function(scheduleGr) {
 		var integrationUtils = new x_snc_skytap_demo.SWSSalesDemoIntegrationUtils();
+		var credentialGr = scheduleGr.skytap_credential;
+		if(integrationUtils.checkForNil(credentialGr))
+			{
+			credentialGr = integrationUtils.getDefaultCredential();
+		}
 		var runid = integrationUtils.insertIntegrationRun(scheduleGr.skytap_credential.sys_id, scheduleGr.rest_message.name, scheduleGr.rest_method.function_name, scheduleGr.sys_id);
 		var name = scheduleGr.rest_message.sys_scope.scope + "." + scheduleGr.rest_message.name;
 		var fn = scheduleGr.rest_method.function_name + "";
-		var restMessage = integrationUtils.buildRestMessage(name, fn, scheduleGr.skytap_credential);
+		var restMessage = integrationUtils.buildRestMessage(name, fn, credentialGr);
 		var response = restMessage.execute();
 		var responseBody = response.getBody();
 		var httpStatus = response.getStatusCode();
 		this._processRestResponse(responseBody, scheduleGr);
 		integrationUtils.updateIntegrationRun(runid, responseBody, 'Completed');
+		var commonParams = {};
 	},
 	
 	_processRestResponse: function(response, schedule) {
@@ -40,11 +46,11 @@ SWSSalesDemoTemplateUtils.prototype = {
 	type: 'SWSSalesDemoTemplateUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
-        <sys_created_by>ajay-adm</sys_created_by>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 23:25:30</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>4e4281a16f3a2200dd36c017ad3ee4aa</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>SWSSalesDemoTemplateUtils</sys_name>
         <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
         <sys_policy>read</sys_policy>
@@ -52,6 +58,6 @@ SWSSalesDemoTemplateUtils.prototype = {
         <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
         <sys_update_name>sys_script_include_4e4281a16f3a2200dd36c017ad3ee4aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-29 22:11:53</sys_updated_on>
+        <sys_updated_on>2017-02-23 16:37:07</sys_updated_on>
     </sys_script_include>
 </record_update>

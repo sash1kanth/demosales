@@ -16,11 +16,11 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/configurations/${configurationid}/labels.json</rest_endpoint>
-        <rest_message display_value="SWS - Environment Label Rest Message">34ab9fdf6fcf6600dd36c017ad3ee48c</rest_message>
+        <rest_message display_value="Environment Labels">34ab9fdf6fcf6600dd36c017ad3ee48c</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 07:19:46</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>34ab9fdf6fcf6600dd36c017ad3ee48d</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_name>put</sys_name>

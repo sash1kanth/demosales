@@ -16,11 +16,11 @@
         <oauth2_profile/>
         <protocol_name/>
         <rest_endpoint>https://cloud.skytap.com/v2/templates/${templateid}/labels.json</rest_endpoint>
-        <rest_message display_value="SWS - Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
+        <rest_message display_value="Template Label Info">6d5fc9ea6fb66200dd36c017ad3ee415</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-23 18:35:57</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2a566fc54fdfa600bd6fb895f110c77a</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>put</sys_name>

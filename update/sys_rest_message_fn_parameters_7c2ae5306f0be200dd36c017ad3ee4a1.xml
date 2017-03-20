@@ -6,7 +6,7 @@
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-10 04:39:04</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7c2ae5306f0be200dd36c017ad3ee4a1</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>endtime</sys_name>

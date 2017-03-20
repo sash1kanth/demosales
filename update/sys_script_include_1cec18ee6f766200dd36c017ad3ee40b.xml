@@ -110,7 +110,7 @@ SWSSalesDemoTemplateIDUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-02 23:15:12</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1cec18ee6f766200dd36c017ad3ee40b</sys_id>
         <sys_mod_count>39</sys_mod_count>
         <sys_name>SWSSalesDemoTemplateIDUtils</sys_name>

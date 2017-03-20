@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 01:49:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c70089e66fb66200dd36c017ad3ee4c4</sys_id>
         <sys_mod_count>11</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.default.credential</sys_name>

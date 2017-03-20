@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>label</element>
-            <list_id display_value="x_snc_skytap_demo_skytap_label_value" element="NULL" name="x_snc_skytap_demo_skytap_label_value" parent="NULL" relationship="NULL" sys_domain="global" view="1a74aa4c4ffe6600bd6fb895f110c771">d36acebd6f7be200dd36c017ad3ee4b0</list_id>
+            <list_id display_value="x_snc_skytap_demo_skytap_label_value" element="NULL" name="x_snc_skytap_demo_skytap_label_value" parent="NULL" relationship="NULL" sys_domain="global" view="c9afe9eedb69f200af143600ad96190e">d36acebd6f7be200dd36c017ad3ee4b0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -29,7 +29,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-12-20 16:21:09</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d36acebd6f7be200dd36c017ad3ee4b0</sys_id>
@@ -43,7 +43,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2017-02-23 16:37:52</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">1a74aa4c4ffe6600bd6fb895f110c771</view>
+            <view display_value="Reference List" name="sys_ref_list">c9afe9eedb69f200af143600ad96190e</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

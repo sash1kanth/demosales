@@ -17,7 +17,7 @@ http://help.skytap.com/API_v2_Documentation.html#Gettemplate</description>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-29 20:17:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c98d8fcd4fbe2200bd6fb895f110c714</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>Template</sys_name>

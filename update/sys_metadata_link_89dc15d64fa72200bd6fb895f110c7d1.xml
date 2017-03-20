@@ -45,7 +45,7 @@
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-12-09 16:03:12</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>89dc15d64fa72200bd6fb895f110c7d1</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Import Projects metadata</sys_name>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_skytap_demo.SWSSalesDemoCatalogAjaxUtils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>SWSSalesDemoCatalogAjaxUtils</name>
+        <script><![CDATA[var SWSSalesDemoCatalogAjaxUtils = Class.create();
+
+SWSSalesDemoCatalogAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getEndTimeDuration: function() {
+		var item = new GlideRecord('x_snc_skytap_demo_catalog_items');
+		item.addQuery('sys_id', this.getParameter('sysparm_item'));
+		item.query();
+		if(item.next())
+			{
+			var template = new GlideRecord('x_snc_skytap_demo_available_templates');
+			template.addQuery('sys_id', item.skytap_template);
+			template.query();
+			if(template.next())
+				{
+				
+				var dur = new GlideDuration();
+				dur.setValue(template.lease_end);
+				var durValue = dur.getDurationValue();
+				if(durValue != '00:00:00')
+					{
+						var durS = durValue.split(' ');
+						var endDuration = (parseInt(durS[0]) * 24 * 60 * 60);
+						var durH = durS[1].split(':');
+						endDuration += (parseInt(durH[0]) * 60 * 60) + (parseInt(durH[1]) * 60) + (parseInt(durH[2]));
+						return endDuration;
+				}
+				else
+					{
+					var defaultEnd = gs.getProperty('x_snc_skytap_demo.skytap_default_lease_end');
+					return defaultEnd * 24 * 60 * 60;
+				}
+			}
+		}
+	},
+	
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-20 14:32:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bfb0d1b2dbadf200af143600ad9619e5</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>SWSSalesDemoCatalogAjaxUtils</sys_name>
+        <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
+        <sys_update_name>sys_script_include_bfb0d1b2dbadf200af143600ad9619e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-20 15:19:20</sys_updated_on>
+    </sys_script_include>
+</record_update>

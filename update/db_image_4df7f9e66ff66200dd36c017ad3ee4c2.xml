@@ -11,7 +11,7 @@
         <sys_class_name>db_image</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 05:53:36</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4df7f9e66ff66200dd36c017ad3ee4c2</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>image_skytap_catalog.png</sys_name>

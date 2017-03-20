@@ -8,7 +8,7 @@
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 19:22:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>43ca08216ff62200dd36c017ad3ee41b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Sys_popup,cloudoperations</sys_name>

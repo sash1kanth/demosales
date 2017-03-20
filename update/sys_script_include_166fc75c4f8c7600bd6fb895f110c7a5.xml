@@ -66,7 +66,7 @@ SWSSalesDemoUserIDUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-12-28 15:47:22</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>166fc75c4f8c7600bd6fb895f110c7a5</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>SWSSalesDemoUserIDUtils</sys_name>

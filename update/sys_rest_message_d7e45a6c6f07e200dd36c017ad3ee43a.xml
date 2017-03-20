@@ -16,7 +16,7 @@ Help Link: http://help.skytap.com/Projects.html</description>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 13:08:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d7e45a6c6f07e200dd36c017ad3ee43a</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_name>Projects</sys_name>

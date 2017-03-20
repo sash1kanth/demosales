@@ -18,7 +18,7 @@ http://help.skytap.com/API_v2_Documentation.html?Highlight=projects#Getprojectde
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 15:18:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8ae2f6646f47e200dd36c017ad3ee475</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>Project</sys_name>

@@ -22,7 +22,7 @@
         <sys_class_name>sc_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 05:47:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>eb9675e66ff66200dd36c017ad3ee43f</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Sales Demo Catalog Items</sys_name>

@@ -55,7 +55,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-10 04:55:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>92dd69706f0be200dd36c017ad3ee491</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>New Environment Name</sys_name>

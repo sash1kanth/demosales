@@ -144,7 +144,7 @@ SWSSalesDemoProjectIDUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 15:04:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>67afe6246f47e200dd36c017ad3ee4ca</sys_id>
         <sys_mod_count>17</sys_mod_count>
         <sys_name>SWSSalesDemoProjectIDUtils</sys_name>

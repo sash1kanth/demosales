@@ -34,7 +34,7 @@ function isCloudUser() {
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 21:59:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>11ee642d6ff62200dd36c017ad3ee484</sys_id>
@@ -51,7 +51,7 @@ function isCloudUser() {
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
-        <variable_set display_value="AD Template Parameters Set">2731183247032100f9529422dc9a7167</variable_set>
+        <variable_set display_value="">2731183247032100f9529422dc9a7167</variable_set>
         <view/>
     </catalog_script_client>
 </record_update>

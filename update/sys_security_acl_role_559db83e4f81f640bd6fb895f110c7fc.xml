@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-02-23 16:37:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>559db83e4f81f640bd6fb895f110c7fc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_skytap_demo_template_labels.skytap-presales-sme</sys_name>

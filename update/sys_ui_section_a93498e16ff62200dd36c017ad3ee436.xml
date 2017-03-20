@@ -5,13 +5,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c05b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>3dfecdb2dbadf200af143600ad9619a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">dec3ec326fba6200dd36c017ad3ee406</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>445b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>bdfecdb2dbadf200af143600ad9619a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>id</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c45b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>31fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>name</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>485b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b1fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>size</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c85b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>35fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>owner_name</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>4c5b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b5fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>state</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>cc5b393e4fc1f640bd6fb895f110c793</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>39fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>405b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b9fecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>region</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c05b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>3dfecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>network_count</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>445b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>bdfecdb2dbadf200af143600ad9619a1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>region_backend</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c45b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>31fecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>number_of_vms</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>485b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b1fecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -173,97 +173,111 @@
             <element>number_of_svms</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c85b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>35fecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lease_end</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b5fecdb2dbadf200af143600ad9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>13</position>
+            <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>4c5b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>39fecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>public_ips</element>
-            <position>14</position>
+            <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>cc5b393e4fc1f640bd6fb895f110c794</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b9fecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>url</element>
-            <position>15</position>
+            <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>405b393e4fc1f640bd6fb895f110c795</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>3dfecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>tag_list</element>
-            <position>16</position>
+            <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c05b393e4fc1f640bd6fb895f110c795</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>bdfecdb2dbadf200af143600ad9619a2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>17</position>
+            <position>18</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>445b393e4fc1f640bd6fb895f110c795</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>31fecdb2dbadf200af143600ad9619a3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>M2M.x_snc_skytap_demo_available_templates.x_snc_skytap_demo_m2m_project_template.template</element>
-            <position>18</position>
+            <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-02-23 21:07:32</sys_created_on>
-            <sys_id>c45b393e4fc1f640bd6fb895f110c795</sys_id>
+            <sys_created_on>2017-03-20 14:25:11</sys_created_on>
+            <sys_id>b1fecdb2dbadf200af143600ad9619a3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_skytap_demo_available_templates" sys_domain="global" view="Default view">a93498e16ff62200dd36c017ad3ee436</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 21:07:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <type>list</type>
         </sys_ui_element>
@@ -275,11 +289,11 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-10-30 20:03:23</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a93498e16ff62200dd36c017ad3ee436</sys_id>
-            <sys_mod_count>13</sys_mod_count>
+            <sys_mod_count>14</sys_mod_count>
             <sys_name>x_snc_skytap_demo_available_templates</sys_name>
             <sys_overrides/>
             <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>
@@ -288,7 +302,7 @@
             <sys_scope display_value="Skytap Demo Sales">99b3a9584fb22200bd6fb895f110c7be</sys_scope>
             <sys_update_name>sys_ui_section_a93498e16ff62200dd36c017ad3ee436</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-02-23 16:37:32</sys_updated_on>
+            <sys_updated_on>2017-03-20 14:25:11</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

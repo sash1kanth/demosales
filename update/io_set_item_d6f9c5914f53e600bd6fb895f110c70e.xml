@@ -6,7 +6,7 @@
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-24 01:51:12</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d6f9c5914f53e600bd6fb895f110c70e</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Skytap Sales Demo Common Variables.Windows Golden Template</sys_name>

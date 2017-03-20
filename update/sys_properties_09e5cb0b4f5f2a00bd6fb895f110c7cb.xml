@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 21:21:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>09e5cb0b4f5f2a00bd6fb895f110c7cb</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.restmessage.add.templatelabel.name</sys_name>

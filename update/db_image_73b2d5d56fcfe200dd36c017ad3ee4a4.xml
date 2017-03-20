@@ -11,7 +11,7 @@
         <sys_class_name>db_image</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-11 16:14:10</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>73b2d5d56fcfe200dd36c017ad3ee4a4</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>image_skyatap_logo_med.png</sys_name>

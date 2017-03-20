@@ -21,7 +21,7 @@
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-01-10 03:29:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2713ab184f987a00bd6fb895f110c723</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Created 2016-12-28 07:50:33</sys_name>

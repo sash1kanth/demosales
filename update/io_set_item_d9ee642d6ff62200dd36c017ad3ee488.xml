@@ -2,11 +2,11 @@
 <record_update table="io_set_item">
     <io_set_item action="INSERT_OR_UPDATE">
         <order>40</order>
-        <sc_cat_item display_value="CloudFormation Stack - Active Directory uses existing VPC with private subnet">e8eee02d6ff62200dd36c017ad3ee4d8</sc_cat_item>
+        <sc_cat_item display_value="">e8eee02d6ff62200dd36c017ad3ee4d8</sc_cat_item>
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 21:59:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d9ee642d6ff62200dd36c017ad3ee488</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Cloud Management Auto Tagging Variables.CloudFormation Stack - Active Directory uses existing VPC with private subnet</sys_name>
@@ -17,6 +17,6 @@
         <sys_update_name>io_set_item_d9ee642d6ff62200dd36c017ad3ee488</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2017-02-23 16:37:53</sys_updated_on>
-        <variable_set display_value="Cloud Management Auto Tagging Variables">54168851d73121008de76ccf6e6103b7</variable_set>
+        <variable_set display_value="">54168851d73121008de76ccf6e6103b7</variable_set>
     </io_set_item>
 </record_update>

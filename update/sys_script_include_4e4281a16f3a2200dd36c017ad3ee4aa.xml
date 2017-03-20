@@ -48,7 +48,7 @@ SWSSalesDemoTemplateUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-30 23:25:30</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4e4281a16f3a2200dd36c017ad3ee4aa</sys_id>
         <sys_mod_count>36</sys_mod_count>
         <sys_name>SWSSalesDemoTemplateUtils</sys_name>

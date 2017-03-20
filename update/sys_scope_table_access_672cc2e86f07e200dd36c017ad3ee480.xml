@@ -72,7 +72,7 @@
         <sys_class_name>sys_scope_table_access</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-09 12:29:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>672cc2e86f07e200dd36c017ad3ee480</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>sys_attachment_doc</sys_name>

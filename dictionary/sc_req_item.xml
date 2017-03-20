@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="hasWorkflow=true" audit="true" create_roles="catalog_admin" extends="task" label="Requested Item" max_length="40" name="sc_req_item" sizeclass="142" text_index="true" type="collection">
+    <element attributes="hasWorkflow=true,text_index_translations" audit="true" create_roles="catalog_admin" extends="task" label="Requested Item" max_length="40" name="sc_req_item" text_index="true" type="collection">
         <element label="Configuration Id" max_length="40" name="x_snc_skytap_demo_configuration_id" type="string"/>
         <element label="Configuration Url" max_length="40" name="x_snc_skytap_demo_configuration_url" type="string"/>
         <element choice="1" default="scheduled" label="Environment State" max_length="40" name="x_snc_skytap_demo_environment_state" type="choice">

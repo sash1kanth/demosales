@@ -236,7 +236,7 @@ SWSSalesDemoCatalogItemCreator.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 05:49:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>1b3775e66ff66200dd36c017ad3ee4c1</sys_id>
         <sys_mod_count>27</sys_mod_count>
         <sys_name>SWSSalesDemoCatalogItemCreator</sys_name>

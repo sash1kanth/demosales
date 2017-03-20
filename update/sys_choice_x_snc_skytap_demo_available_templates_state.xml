@@ -83,8 +83,8 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-03 05:30:43</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
-            <sys_id>4f951a0a4fe32200bd6fb895f110c7ee</sys_id>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>cd871f2edb6df2003fc23ecf9d961992</sys_id>
             <sys_mod_count>4</sys_mod_count>
             <sys_name>state</sys_name>
             <sys_package display_value="Skytap Demo Sales" source="x_snc_skytap_demo">99b3a9584fb22200bd6fb895f110c7be</sys_package>

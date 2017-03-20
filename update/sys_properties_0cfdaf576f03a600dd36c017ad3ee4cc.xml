@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 08:39:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>0cfdaf576f03a600dd36c017ad3ee4cc</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.workflow.labeltoenvironment.id</sys_name>

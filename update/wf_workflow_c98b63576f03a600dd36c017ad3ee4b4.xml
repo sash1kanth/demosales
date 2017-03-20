@@ -67,7 +67,7 @@
         <vars/>
     </wf_workflow>
     <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Skytap Rest">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
+        <activity_definition display_value="">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
         <databus_lookup_id>3</databus_lookup_id>
         <height/>

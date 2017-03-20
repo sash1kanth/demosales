@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-03 06:09:47</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e5cbbd2a6ff66200dd36c017ad3ee47b</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>x_snc_skytap_demo.skytap.catalog</sys_name>

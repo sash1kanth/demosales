@@ -194,7 +194,7 @@
         <sys_updated_on>2016-11-29 13:47:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Skytap Rest">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
+        <activity_definition display_value="">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
         <databus_lookup_id>9</databus_lookup_id>
         <height/>
@@ -350,7 +350,7 @@
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</activity>
         <condition>activity.result != 'success'</condition>
-        <condition_default display_value="Failure">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
+        <condition_default display_value="">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
         <error>false</error>
@@ -371,7 +371,7 @@
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Change Environment Attributes">91ed5dcf4fdb2a00bd6fb895f110c766</activity>
         <condition>activity.result == 'success'</condition>
-        <condition_default display_value="Success">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
+        <condition_default display_value="">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
         <error>false</error>
@@ -418,7 +418,7 @@
         <y>465</y>
     </wf_activity>
     <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Skytap Rest">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
+        <activity_definition display_value="">6ef15fc56f4fe200dd36c017ad3ee4ea</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
         <databus_lookup_id>11</databus_lookup_id>
         <height/>
@@ -577,7 +577,7 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</activity>
         <condition>activity.result != 'success'</condition>
-        <condition_default display_value="Failure">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
+        <condition_default display_value="">a1e649c74fdb2a00bd6fb895f110c775</condition_default>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
         <error>false</error>
@@ -598,7 +598,7 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Get Environment Status">15ed5dcf4fdb2a00bd6fb895f110c768</activity>
         <condition>activity.result == 'success'</condition>
-        <condition_default display_value="Success">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
+        <condition_default display_value="">339689c74fdb2a00bd6fb895f110c7b3</condition_default>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
         <error>false</error>
@@ -959,12 +959,12 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 13:47:36</sys_created_on>
-        <sys_id>dded1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_id>1ded1dcf4fdb2a00bd6fb895f110c776</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -987,12 +987,12 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 13:47:36</sys_created_on>
-        <sys_id>1ded1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_id>dded1dcf4fdb2a00bd6fb895f110c776</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -1029,12 +1029,12 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 13:47:36</sys_created_on>
-        <sys_id>15ed1dcf4fdb2a00bd6fb895f110c778</sys_id>
+        <sys_id>11ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <value/>
-        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -1043,12 +1043,12 @@ workflow.scratchpad.status = jsonLabel['runstate'];</value>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 13:47:36</sys_created_on>
-        <sys_id>11ed1dcf4fdb2a00bd6fb895f110c776</sys_id>
+        <sys_id>15ed1dcf4fdb2a00bd6fb895f110c778</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2016-11-29 13:47:36</sys_updated_on>
         <value/>
-        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>

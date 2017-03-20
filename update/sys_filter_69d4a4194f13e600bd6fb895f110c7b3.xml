@@ -12,7 +12,7 @@
         <sys_class_name>sys_filter</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-23 23:08:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69d4a4194f13e600bd6fb895f110c7b3</sys_id>
@@ -27,6 +27,6 @@
         <sys_updated_on>2017-02-23 16:37:15</sys_updated_on>
         <table>sys_user</table>
         <title>mobile</title>
-        <user display_value="Ajay Admin">57d653c84f322200bd6fb895f110c7d4</user>
+        <user display_value="">57d653c84f322200bd6fb895f110c7d4</user>
     </sys_filter>
 </record_update>

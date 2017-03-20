@@ -14,7 +14,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2016-11-09 12:32:07</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f0dcc6e86f07e200dd36c017ad3ee4c2</sys_id>
@@ -27,7 +27,7 @@
             <sys_update_name>sys_ui_list_sys_attachment_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2017-02-23 16:37:59</sys_updated_on>
-            <sys_user display_value="Ajay Admin">57d653c84f322200bd6fb895f110c7d4</sys_user>
+            <sys_user display_value="">57d653c84f322200bd6fb895f110c7d4</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

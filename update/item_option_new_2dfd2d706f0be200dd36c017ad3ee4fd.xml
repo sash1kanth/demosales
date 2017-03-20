@@ -55,7 +55,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-10 04:56:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2dfd2d706f0be200dd36c017ad3ee4fd</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>TimeZone</sys_name>

@@ -15,7 +15,7 @@ http://help.skytap.com/API_v2_Documentation.html#User2</description>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-12-28 15:24:23</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>07f94fd84f8c7600bd6fb895f110c76f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Users</sys_name>

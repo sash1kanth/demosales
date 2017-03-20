@@ -123,7 +123,7 @@ SWSSalesDemoAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-18 06:16:20</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a2ac431f6fcf6600dd36c017ad3ee498</sys_id>
         <sys_mod_count>28</sys_mod_count>
         <sys_name>SWSSalesDemoAjaxUtils</sys_name>
